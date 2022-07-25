@@ -1,27 +1,26 @@
-import React from 'react';
 import DataRow from './DataRow';
-import Card from './common/Card';
+import Card from './Card';
 import {
     GithubIcon,
     InstagramIcon,
-    Logo,
+    Avatar,
     StackOverFlowIcon,
     TwitterIcon,
 } from './common/svg';
 
-const App = () => {
+const App = (): JSX.Element => {
     return (
         <div className="container">
-            <div class="card profile">
-                <div class="profile__avatar">
-                    <Logo />
+            <div className="card profile">
+                <div className="profile__avatar">
+                    <Avatar />
                 </div>
 
-                <div class="profile__name">Amin Rostami</div>
-                <div class="profile__description">
+                <div className="profile__name">Amin Rostami</div>
+                <div className="profile__description">
                     Love to learn, Love to find solution for the problems.
                 </div>
-                <div class="profile__links">
+                <div className="profile__links">
                     <a href="https://github.com/AmRo045" target="_blank">
                         <GithubIcon />
                     </a>
@@ -131,7 +130,7 @@ const App = () => {
                 <DataRow label="Material Hub">
                     <p>
                         A material management system for{' '}
-                        <a href="https://arcogroup.org">Acro</a> company.
+                        <a href="https://arcogroup.org">Acro</a> company.{' '}
                         <a href="https://www.dropbox.com/s/zhrvf3qdyt5813f/MaterialHub.mp4?dl=0">
                             Checkout
                         </a>

@@ -1,4 +1,4 @@
-const InstagramIcon = () => {
+const InstagramIcon = (): JSX.Element => {
     return (
         <svg viewBox="0 0 24 24">
             <path

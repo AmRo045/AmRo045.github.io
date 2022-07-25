@@ -1,7 +1,7 @@
 import GithubIcon from './GithubIcon';
 import InstagramIcon from './InstagramIcon';
-import Logo from './Logo';
+import Avatar from './Avatar';
 import StackOverFlowIcon from './StackOverFlowIcon';
 import TwitterIcon from './TwitterIcon';
 
-export { GithubIcon, InstagramIcon, Logo, StackOverFlowIcon, TwitterIcon };
+export { GithubIcon, InstagramIcon, Avatar, StackOverFlowIcon, TwitterIcon };
