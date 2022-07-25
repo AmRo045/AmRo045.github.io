@@ -25,7 +25,7 @@ jobs:
           CI: false
 
       - name: 🧪 Test
-        run: npm run test
+        run: npm run test-ci
 
       - name: ⏫ Upload production files
         if: ${{ github.event_name == 'push' }}
