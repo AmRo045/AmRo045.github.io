@@ -3,7 +3,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         --brand-hue: 230;
-        --surface1: hsl(var(--brand-hue), 0%, 98%);
+        --surface1: hsl(var(--brand-hue), 46%, 96%);
         --surface2: hsl(var(--brand-hue), 100%, 100%);
         --text: hsl(var(--brand-hue), 32%, 32%);
         --primary1: hsl(var(--brand-hue), 64%, 58%);
@@ -182,16 +182,27 @@ body {
 }
 
 .profile__avatar {
-    padding: 1rem;
-    border-radius: 999999px;
-    background-color: var(--surface1);
+    position: relative;
 }
 
 .profile__avatar svg {
     stroke-linecap: round;
     stroke-linejoin: round;
+}
+
+.profile__avatar svg:first-of-type {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke-width: 24;
     fill: var(--primary1);
-    inline-size: 8rem;
+    stroke: var(--primary1);
+}
+
+.profile__avatar svg:last-of-type {
+    fill: var(--surface1);
+    inline-size: 10rem;
+    transform: scale(0.76);
 }
 
 .profile__name {
