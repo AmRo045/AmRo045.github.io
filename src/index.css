@@ -120,7 +120,7 @@ body {
     inline-size: 100%;
 
     margin-inline: auto;
-    margin-block: 1.5rem;
+    margin-block: 0;
 
     display: grid;
     gap: 1.5rem;
@@ -132,44 +132,6 @@ body {
         'languages'
         'skills'
         'activities';
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-
-        grid-template-areas:
-            'profile profile profile'
-            'basic-info basic-info basic-info'
-            'contact-info languages languages'
-            'skills skills skills'
-            'activities activities activities';
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-
-        grid-template-areas:
-            'profile profile profile'
-            'basic-info basic-info contact-info'
-            'basic-info basic-info languages'
-            'skills activities activities'
-            'skills activities activities';
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
 }
 
 .profile {
@@ -236,7 +198,6 @@ body {
 
 .card {
     background-color: var(--surface2);
-    border-radius: 10px;
     padding: 24px;
 
     inline-size: 100%;
@@ -314,4 +275,47 @@ body {
 
 .card--activities {
     grid-area: activities;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        margin-block: 1.5rem;
+    }
+
+    .card {
+        border-radius: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+
+        grid-template-areas:
+            'profile profile profile'
+            'basic-info basic-info basic-info'
+            'contact-info languages languages'
+            'skills skills skills'
+            'activities activities activities';
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+
+        grid-template-areas:
+            'profile profile profile'
+            'basic-info basic-info contact-info'
+            'basic-info basic-info languages'
+            'skills activities activities'
+            'skills activities activities';
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
 }
