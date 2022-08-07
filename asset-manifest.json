@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5c34ee8.css",
-    "main.js": "/static/js/main.49d8a271.js",
+    "main.css": "/static/css/main.85c2d20f.css",
+    "main.js": "/static/js/main.b26db741.js",
     "static/js/787.63ef6c6f.chunk.js": "/static/js/787.63ef6c6f.chunk.js",
+    "static/media/avatar.svg": "/static/media/avatar.3435609414d94ffd56aec65e5c1f5226.svg",
+    "static/media/github.svg": "/static/media/github.e51d3751099c30ba97f7d6afb449eb5f.svg",
+    "static/media/twitter.svg": "/static/media/twitter.eb65b53847d3ab22f7e7a83b57d938bf.svg",
+    "static/media/instagram.svg": "/static/media/instagram.239f7c5be2965801b35de0eca90616ca.svg",
     "index.html": "/index.html",
-    "main.c5c34ee8.css.map": "/static/css/main.c5c34ee8.css.map",
-    "main.49d8a271.js.map": "/static/js/main.49d8a271.js.map",
+    "static/media/stackoverflow.svg": "/static/media/stackoverflow.4b288c270593dfe7ee4458eb60c007a9.svg",
+    "static/media/avatar-bg.svg": "/static/media/avatar-bg.2ad81a512148d3da1cee2e500be6b191.svg",
+    "main.85c2d20f.css.map": "/static/css/main.85c2d20f.css.map",
+    "main.b26db741.js.map": "/static/js/main.b26db741.js.map",
     "787.63ef6c6f.chunk.js.map": "/static/js/787.63ef6c6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5c34ee8.css",
-    "static/js/main.49d8a271.js"
+    "static/css/main.85c2d20f.css",
+    "static/js/main.b26db741.js"
   ]
 }
