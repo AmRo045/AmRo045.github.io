@@ -1,18 +1,19 @@
 import DataRow from './DataRow';
 import Card from './Card';
-import {
-    GithubIcon,
-    InstagramIcon,
-    Avatar,
-    StackOverFlowIcon,
-    TwitterIcon,
-} from './common/svg';
+
+import { ReactComponent as AvatarBg } from '../assets/svg/avatar-bg.svg';
+import { ReactComponent as Avatar } from '../assets/svg/avatar.svg';
+import { ReactComponent as GithubIcon } from '../assets/svg/github.svg';
+import { ReactComponent as InstagramIcon } from '../assets/svg/instagram.svg';
+import { ReactComponent as StackOverFlowIcon } from '../assets/svg/stackoverflow.svg';
+import { ReactComponent as TwitterIcon } from '../assets/svg/twitter.svg';
 
 const App = (): JSX.Element => {
     return (
         <div className="container">
             <div className="card profile">
                 <div className="profile__avatar">
+                    <AvatarBg />
                     <Avatar />
                 </div>
 
