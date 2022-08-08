@@ -1,75 +1,132 @@
 import { ReactNode } from 'react';
 import Card from './Card';
-import DataRow from './DataRow';
+
+import { ReactComponent as AdobeIllustratorLogo } from '../assets/svg/adobe-illustrator.svg';
+import { ReactComponent as AdobePhotoshopLogo } from '../assets/svg/adobe-photoshop.svg';
+import { ReactComponent as AdobeXdLogo } from '../assets/svg/adobe-xd.svg';
+import { ReactComponent as CLogo } from '../assets/svg/c.svg';
+import { ReactComponent as CiCdLogo } from '../assets/svg/ci-cd.svg';
+import { ReactComponent as Css3Logo } from '../assets/svg/css3.svg';
+import { ReactComponent as DatabaseLogo } from '../assets/svg/database.svg';
+import { ReactComponent as DockerLogo } from '../assets/svg/docker.svg';
+import { ReactComponent as DotnetLogo } from '../assets/svg/dotnet.svg';
+import { ReactComponent as GitLogo } from '../assets/svg/git.svg';
+import { ReactComponent as Html5Logo } from '../assets/svg/html5.svg';
+import { ReactComponent as JavaLogo } from '../assets/svg/java.svg';
+import { ReactComponent as JavaScriptLogo } from '../assets/svg/javascript.svg';
+import { ReactComponent as NodeJSLogo } from '../assets/svg/nodejs.svg';
+import { ReactComponent as PhpLogo } from '../assets/svg/php.svg';
+import { ReactComponent as PythonLogo } from '../assets/svg/python.svg';
+import { ReactComponent as ReactJSLogo } from '../assets/svg/reactjs.svg';
+import { ReactComponent as RulerLogo } from '../assets/svg/ruler.svg';
+import { ReactComponent as TestLogo } from '../assets/svg/test.svg';
+import { ReactComponent as TypeScriptLogo } from '../assets/svg/typescript.svg';
 
 type Item = {
+    logo: JSX.Element;
     label: string;
     value: string;
 };
 
 const data: Item[] = [
     {
-        label: '⏱ Git',
+        logo: <GitLogo className="skill-card__logo" />,
+        label: 'Git',
         value: 'Advanced',
     },
     {
-        label: '🔪 C# & .NET',
+        logo: <DotnetLogo className="skill-card__logo" />,
+        label: 'C# / WPF',
         value: 'Advanced',
     },
     {
-        label: '🖌 WPF',
+        logo: <PhpLogo className="skill-card__logo" />,
+        label: 'PHP / Laravel',
         value: 'Advanced',
     },
     {
-        label: 'PHP/Laravel',
+        logo: <JavaScriptLogo className="skill-card__logo" />,
+        label: 'JavaScript',
         value: 'Advanced',
     },
     {
-        label: 'JavaScript & TypeScript & NodeJS',
+        logo: <NodeJSLogo className="skill-card__logo" />,
+        label: 'NodeJS',
         value: 'Advanced',
     },
     {
-        label: 'HTML, CSS',
+        logo: <TypeScriptLogo className="skill-card__logo" />,
+        label: 'TypeScript',
         value: 'Advanced',
     },
     {
-        label: '📐 Design Patterns',
+        logo: <Html5Logo className="skill-card__logo" />,
+        label: 'HTML',
+        value: 'Advanced',
+    },
+    {
+        logo: <Css3Logo className="skill-card__logo" />,
+        label: 'CSS',
+        value: 'Advanced',
+    },
+    {
+        logo: <ReactJSLogo className="skill-card__logo" />,
+        label: 'React',
         value: 'Intermediate',
     },
     {
-        label: '🧪 Unit & Integrated Testing & TDD',
+        logo: <RulerLogo className="skill-card__logo" />,
+        label: 'Design Patterns',
         value: 'Intermediate',
     },
     {
-        label: '🖇 CI/CD',
+        logo: <TestLogo className="skill-card__logo" />,
+        label: 'Unit & Integrated Testing & TDD',
         value: 'Intermediate',
     },
     {
-        label: '🚢 Docker',
+        logo: <CiCdLogo className="skill-card__logo" />,
+        label: 'CI/CD',
         value: 'Intermediate',
     },
     {
-        label: '☕ Java',
+        logo: <DockerLogo className="skill-card__logo" />,
+        label: 'Docker',
         value: 'Intermediate',
     },
     {
-        label: '🗡 C/C++',
+        logo: <JavaLogo className="skill-card__logo" />,
+        label: 'Java',
         value: 'Intermediate',
     },
     {
-        label: '🐍 Python',
+        logo: <CLogo className="skill-card__logo" />,
+        label: 'C/C++',
         value: 'Intermediate',
     },
     {
-        label: '🗄 SQL Server & MySQL',
+        logo: <PythonLogo className="skill-card__logo" />,
+        label: 'Python',
         value: 'Intermediate',
     },
     {
-        label: '✒ Adobe XD & Adobe Illustrator & Adobe Photoshop',
+        logo: <DatabaseLogo className="skill-card__logo" />,
+        label: 'SQL Server & MySQL',
         value: 'Intermediate',
     },
     {
-        label: '⚛ React',
+        logo: <AdobePhotoshopLogo className="skill-card__logo" />,
+        label: 'Adobe Photoshop',
+        value: 'Intermediate',
+    },
+    {
+        logo: <AdobeIllustratorLogo className="skill-card__logo" />,
+        label: 'Adobe Illustrator',
+        value: 'Intermediate',
+    },
+    {
+        logo: <AdobeXdLogo className="skill-card__logo" />,
+        label: 'Adobe XD',
         value: 'Intermediate',
     },
 ];
@@ -79,7 +136,15 @@ const Skills = (): JSX.Element => {
         <Card type="skills" header="Technical Skills">
             {data.map(
                 (item: Item): ReactNode => (
-                    <DataRow label={item.label} value={item.value} />
+                    <div className="skill-card">
+                        {item.logo}
+                        <div>
+                            <div className="skill-card__name">{item.label}</div>
+                            <div className="skill-card__level">
+                                {item.value}
+                            </div>
+                        </div>
+                    </div>
                 )
             )}
         </Card>
