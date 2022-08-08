@@ -277,7 +277,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
 }
 
 .card--activities {
@@ -291,6 +290,7 @@ body {
     padding: 1rem;
     border-radius: 6px;
     background-color: var(--surface1);
+    flex: 1 auto;
 }
 
 .skill-card__logo {
