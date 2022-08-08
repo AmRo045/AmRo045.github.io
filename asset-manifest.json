@@ -1,21 +1,41 @@
 {
   "files": {
-    "main.css": "/static/css/main.85c2d20f.css",
-    "main.js": "/static/js/main.b26db741.js",
+    "main.css": "/static/css/main.c2cb908c.css",
+    "main.js": "/static/js/main.1e5f6135.js",
     "static/js/787.63ef6c6f.chunk.js": "/static/js/787.63ef6c6f.chunk.js",
+    "static/media/reactjs.svg": "/static/media/reactjs.3402c2404938e90b9d8124b7c26480a7.svg",
+    "static/media/java.svg": "/static/media/java.1fce7bd25b10f042910f26ce1460b350.svg",
+    "static/media/php.svg": "/static/media/php.08656081111ca733f41684f6c53049e5.svg",
+    "static/media/html5.svg": "/static/media/html5.57b461fcc0928ed69096fa0480af8455.svg",
+    "static/media/docker.svg": "/static/media/docker.bb3208f4467df2c494c087f019596aeb.svg",
+    "static/media/adobe-xd.svg": "/static/media/adobe-xd.cd7e1bbd3ea87b458a1966125a84d87f.svg",
+    "static/media/git.svg": "/static/media/git.b8660c259f844d3fd2f5153e3460f7f7.svg",
+    "static/media/adobe-photoshop.svg": "/static/media/adobe-photoshop.4bfcbf92037cccc8ee0edb63fc21f7eb.svg",
+    "static/media/nodejs.svg": "/static/media/nodejs.f95b0eca9054a60434dba4ede073175a.svg",
     "static/media/avatar.svg": "/static/media/avatar.3435609414d94ffd56aec65e5c1f5226.svg",
+    "static/media/database.svg": "/static/media/database.24ad68fd7c21f78c92274dd3d5f0d15f.svg",
+    "static/media/typescript.svg": "/static/media/typescript.295b7784c8b931e94c094daffe8ea908.svg",
+    "static/media/test.svg": "/static/media/test.180922154d9c6794996cd1f8102e2c67.svg",
+    "static/media/ruler.svg": "/static/media/ruler.3846cb18ff58b62a8ecbcae19954045a.svg",
     "static/media/github.svg": "/static/media/github.e51d3751099c30ba97f7d6afb449eb5f.svg",
+    "static/media/c.svg": "/static/media/c.ab3bdc3e87c42183c0da34d2abe994e6.svg",
     "static/media/twitter.svg": "/static/media/twitter.eb65b53847d3ab22f7e7a83b57d938bf.svg",
+    "static/media/javascript.svg": "/static/media/javascript.d95665bb2d46824a9ac2e82d44264f89.svg",
+    "static/media/python.svg": "/static/media/python.bf6e8253df9ac2658381437b17510e63.svg",
     "static/media/instagram.svg": "/static/media/instagram.239f7c5be2965801b35de0eca90616ca.svg",
     "index.html": "/index.html",
+    "static/media/dotnet.svg": "/static/media/dotnet.be23a58466bc7e3f4e2a6cb5530d5b88.svg",
+    "static/media/adobe-illustrator.svg": "/static/media/adobe-illustrator.12632adfb31937ceffdfbb24651a4e31.svg",
     "static/media/stackoverflow.svg": "/static/media/stackoverflow.4b288c270593dfe7ee4458eb60c007a9.svg",
     "static/media/avatar-bg.svg": "/static/media/avatar-bg.2ad81a512148d3da1cee2e500be6b191.svg",
-    "main.85c2d20f.css.map": "/static/css/main.85c2d20f.css.map",
-    "main.b26db741.js.map": "/static/js/main.b26db741.js.map",
+    "static/media/css3.svg": "/static/media/css3.dc45dfe1a2b8ee04dc10ae033ba3cb13.svg",
+    "static/media/ci-cd.svg": "/static/media/ci-cd.51f7166fcb49deadb79ca694291c7e31.svg",
+    "main.c2cb908c.css.map": "/static/css/main.c2cb908c.css.map",
+    "main.1e5f6135.js.map": "/static/js/main.1e5f6135.js.map",
     "787.63ef6c6f.chunk.js.map": "/static/js/787.63ef6c6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85c2d20f.css",
-    "static/js/main.b26db741.js"
+    "static/css/main.c2cb908c.css",
+    "static/js/main.1e5f6135.js"
   ]
 }
