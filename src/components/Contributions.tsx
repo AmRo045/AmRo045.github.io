@@ -18,14 +18,13 @@ const Contributions = (): JSX.Element => {
                 nProgress.done();
             })
             .catch((error) => {
-                nProgress.done();
-                if (error.name !== "CanceledError") throw error;
+                if (error.name !== "CanceledError") {
+                    nProgress.done();
+                    throw error;
+                }
             });
 
-        return () => {
-            abortController.abort();
-            nProgress.done();
-        };
+        return () => abortController.abort();
     }, []);
 
     return (
