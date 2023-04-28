@@ -6,6 +6,7 @@ import ContributionCmp from "./Contribution";
 
 const Contributions = (): JSX.Element => {
     const [contributions, setContributions] = useState<Contribution[] | []>([]);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const abortController = new AbortController();
@@ -20,7 +21,7 @@ const Contributions = (): JSX.Element => {
             .catch((error) => {
                 if (error.name !== "CanceledError") {
                     nProgress.done();
-                    throw error;
+                    setError(error.message);
                 }
             });
 
@@ -29,9 +30,17 @@ const Contributions = (): JSX.Element => {
 
     return (
         <Card type="contributions" header="Contributions">
-            {contributions.map((contribution: Contribution, index: number) => (
-                <ContributionCmp key={index} contribution={contribution} />
-            ))}
+            {error && <div>ERROR: {error}</div>}
+
+            {!error &&
+                contributions.map(
+                    (contribution: Contribution, index: number) => (
+                        <ContributionCmp
+                            key={index}
+                            contribution={contribution}
+                        />
+                    )
+                )}
         </Card>
     );
 };
