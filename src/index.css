@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,600&display=swap");
 
 @media (prefers-color-scheme: light) {
     :root {
         --brand-hue: 230;
         --surface1: hsl(var(--brand-hue), 46%, 96%);
         --surface2: hsl(var(--brand-hue), 100%, 100%);
+        --code: hsl(var(--brand-hue), 100%, 94%);
         --text: hsl(var(--brand-hue), 32%, 32%);
         --primary1: hsl(var(--brand-hue), 64%, 58%);
         --primary2: hsl(var(--brand-hue), 64%, 42%);
+
         --shadow: hsla(0, 0%, 0%, 0.03) 0 1px 30px,
             hsla(0, 0%, 0%, 0.05) 0 1px 2px;
 
@@ -22,9 +24,11 @@
         --brand-hue: 230;
         --surface1: hsl(var(--brand-hue), 20%, 24%);
         --surface2: hsl(var(--brand-hue), 20%, 16%);
+        --code: hsl(var(--brand-hue), 20%, 32%);
         --text: hsl(var(--brand-hue), 58%, 82%);
         --primary1: hsl(var(--brand-hue), 90%, 75%);
         --primary2: hsl(var(--brand-hue), 90%, 85%);
+
         --shadow: hsla(0, 0%, 0%, 0.03) 0 1px 30px,
             hsla(0, 0%, 0%, 0.05) 0 1px 2px;
 
@@ -35,8 +39,12 @@
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+
+    background-color: var(--code);
+    padding: 0.36rem;
+    border-radius: 6px;
 }
 
 * {
@@ -69,9 +77,9 @@ body,
 button,
 input,
 textarea {
-    font-family: 'Nunito', sans-serif, -apple-system, BlinkMacSystemFont,
-        'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-        'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Nunito", sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -89,7 +97,7 @@ a:hover {
 
 a::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: calc(50% - 4px);
     left: 100%;
     right: 100%;
@@ -126,12 +134,13 @@ body {
     gap: 1.5rem;
 
     grid-template-areas:
-        'profile'
-        'basic-info'
-        'contact-info'
-        'languages'
-        'skills'
-        'activities';
+        "profile"
+        "basic-info"
+        "contact-info"
+        "languages"
+        "skills"
+        "activities"
+        "contributions";
 }
 
 .profile {
@@ -213,14 +222,14 @@ body {
     position: relative;
 }
 .card__header::after {
-    content: '}';
+    content: "}";
     margin-inline-start: 0.32rem;
 
     color: hsl(var(--text2));
 }
 
 .card__header::before {
-    content: '{';
+    content: "{";
     margin-inline-end: 0.32rem;
 
     color: hsl(var(--text2));
@@ -283,6 +292,10 @@ body {
     grid-area: activities;
 }
 
+.card--contributions {
+    grid-area: contributions;
+}
+
 .skill-card {
     display: flex;
     align-items: center;
@@ -313,6 +326,53 @@ body {
     font-size: 1.16rem;
 }
 
+.contribution {
+    display: grid;
+    gap: 1.4rem;
+
+    overflow: hidden;
+    padding: 1rem;
+
+    border-radius: 16px;
+    background-color: var(--surface1);
+    box-shadow: var(--shadow);
+}
+
+.contribution__repo--title {
+    font-weight: 600;
+    font-size: 1.24rem;
+}
+
+.contribution__repo--description {
+    opacity: 0.86;
+}
+
+.contribution__repo--stats {
+    display: flex;
+    gap: 1rem;
+}
+
+.contribution__pull-request {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.24rem;
+
+    padding-inline: 1rem;
+    margin: 0;
+}
+
+.contribution__pull-request--creation-date {
+    opacity: 0.86;
+    font-size: 0.96rem;
+    margin-inline-end: 0.24rem;
+}
+
+.contribution__pull-request--title {
+    display: inline-block;
+    font-weight: 600;
+    white-space: initial;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -329,11 +389,12 @@ body {
         max-width: 720px;
 
         grid-template-areas:
-            'profile profile profile'
-            'basic-info basic-info basic-info'
-            'contact-info languages languages'
-            'skills skills skills'
-            'activities activities activities';
+            "profile profile profile"
+            "basic-info basic-info basic-info"
+            "contact-info languages languages"
+            "skills skills skills"
+            "activities activities activities"
+            "contributions contributions contributions";
     }
 }
 
@@ -342,11 +403,12 @@ body {
         max-width: 960px;
 
         grid-template-areas:
-            'profile profile profile'
-            'basic-info basic-info contact-info'
-            'basic-info basic-info languages'
-            'skills skills skills'
-            'activities activities activities';
+            "profile profile profile"
+            "basic-info basic-info contact-info"
+            "basic-info basic-info languages"
+            "skills skills skills"
+            "activities activities activities"
+            "contributions contributions contributions";
     }
 }
 
