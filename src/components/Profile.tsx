@@ -3,6 +3,8 @@ import { ReactComponent as Avatar } from "../assets/svg/avatar.svg";
 import { ReactComponent as GithubIcon } from "../assets/svg/github.svg";
 import { ReactComponent as InstagramIcon } from "../assets/svg/instagram.svg";
 import { ReactComponent as StackOverFlowIcon } from "../assets/svg/stackoverflow.svg";
+import { ReactComponent as LinkedInIcon } from "../assets/svg/linkedin.svg";
+import { ReactComponent as LeetCodeIcon } from "../assets/svg/leetcode.svg";
 import { ReactComponent as TwitterIcon } from "../assets/svg/twitter.svg";
 
 const Profile = (): JSX.Element => {
@@ -45,6 +47,20 @@ const Profile = (): JSX.Element => {
                     rel="noopener noreferrer"
                 >
                     <TwitterIcon />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/amin-rostami-50a606133"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <LinkedInIcon />
+                </a>
+                <a
+                    href="https://leetcode.com/AmRo045/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <LeetCodeIcon />
                 </a>
             </div>
         </div>

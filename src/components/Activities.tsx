@@ -4,22 +4,6 @@ import DataRow from "./DataRow";
 const Activities = (): JSX.Element => {
     return (
         <Card type="activities" header="Activities">
-            <DataRow label="Open Source Contributions">
-                <a href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit">
-                    Material Design in XAML
-                </a>
-                {" & "}
-                <a href="https://ohmyposh.dev/docs/themes#amro">Oh My Posh</a>
-            </DataRow>
-            <DataRow label="Hacktoberfest Badge">
-                <a href="https://www.instagram.com/p/CHRzSyljWZqn7sAIuHF2UBXB318CFTCo7kz8Js0/">
-                    2020
-                </a>
-                {" & "}
-                <a href="https://www.instagram.com/p/CWQXu91oLQQTVqokO8YqVwkZHdc1Zoixihgazo0/">
-                    2021
-                </a>
-            </DataRow>
             <DataRow label="School Enrollment Website">
                 <a href="http://kherad-reyhan.com/">Old Version (Plain PHP)</a>
                 {" -> "}

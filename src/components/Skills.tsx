@@ -1,9 +1,6 @@
 import { ReactNode } from "react";
 import Card from "./Card";
 
-import { ReactComponent as AdobeIllustratorLogo } from "../assets/svg/adobe-illustrator.svg";
-import { ReactComponent as AdobePhotoshopLogo } from "../assets/svg/adobe-photoshop.svg";
-import { ReactComponent as AdobeXdLogo } from "../assets/svg/adobe-xd.svg";
 import { ReactComponent as CLogo } from "../assets/svg/c.svg";
 import { ReactComponent as CiCdLogo } from "../assets/svg/ci-cd.svg";
 import { ReactComponent as Css3Logo } from "../assets/svg/css3.svg";
@@ -112,21 +109,6 @@ const data: Item[] = [
     {
         logo: <DatabaseLogo className="skill-card__logo" />,
         label: "SQL Server & MySQL",
-        value: "Intermediate",
-    },
-    {
-        logo: <AdobePhotoshopLogo className="skill-card__logo" />,
-        label: "Adobe Photoshop",
-        value: "Intermediate",
-    },
-    {
-        logo: <AdobeIllustratorLogo className="skill-card__logo" />,
-        label: "Adobe Illustrator",
-        value: "Intermediate",
-    },
-    {
-        logo: <AdobeXdLogo className="skill-card__logo" />,
-        label: "Adobe XD",
         value: "Intermediate",
     },
 ];
