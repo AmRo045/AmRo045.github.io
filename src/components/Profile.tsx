@@ -1,9 +1,9 @@
-import { ReactComponent as AvatarBg } from '../assets/svg/avatar-bg.svg';
-import { ReactComponent as Avatar } from '../assets/svg/avatar.svg';
-import { ReactComponent as GithubIcon } from '../assets/svg/github.svg';
-import { ReactComponent as InstagramIcon } from '../assets/svg/instagram.svg';
-import { ReactComponent as StackOverFlowIcon } from '../assets/svg/stackoverflow.svg';
-import { ReactComponent as TwitterIcon } from '../assets/svg/twitter.svg';
+import { ReactComponent as AvatarBg } from "../assets/svg/avatar-bg.svg";
+import { ReactComponent as Avatar } from "../assets/svg/avatar.svg";
+import { ReactComponent as GithubIcon } from "../assets/svg/github.svg";
+import { ReactComponent as InstagramIcon } from "../assets/svg/instagram.svg";
+import { ReactComponent as StackOverFlowIcon } from "../assets/svg/stackoverflow.svg";
+import { ReactComponent as TwitterIcon } from "../assets/svg/twitter.svg";
 
 const Profile = (): JSX.Element => {
     return (
@@ -18,19 +18,32 @@ const Profile = (): JSX.Element => {
                 Love to learn, Love to find solution for the problems.
             </div>
             <div className="profile__links">
-                <a href="https://github.com/AmRo045" target="_blank">
+                <a
+                    href="https://github.com/AmRo045"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <GithubIcon />
                 </a>
-                <a href="https://instagram.com/AmRo045" target="_blank">
+                <a
+                    href="https://instagram.com/AmRo045"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <InstagramIcon />
                 </a>
                 <a
                     href="https://stackoverflow.com/users/11219312/amro"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <StackOverFlowIcon />
                 </a>
-                <a href="https://twitter.com/AmRo045" target="_blank">
+                <a
+                    href="https://twitter.com/AmRo045"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <TwitterIcon />
                 </a>
             </div>

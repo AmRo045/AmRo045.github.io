@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import {
     Contribution as ContributionType,
     PullRequest as PullRequestType,
@@ -34,14 +35,16 @@ const Contribution = ({
                 </div>
             </div>
 
-            {pullRequests.map((pr: PullRequestType, index: number) => (
-                <PullRequest
-                    key={index}
-                    title={pr.title}
-                    url={pr.pull_request.html_url}
-                    creationDate={pr.created_at}
-                />
-            ))}
+            {pullRequests.map(
+                (pr: PullRequestType, index: number): ReactNode => (
+                    <PullRequest
+                        key={index}
+                        title={pr.title}
+                        url={pr.pull_request.html_url}
+                        creationDate={pr.created_at}
+                    />
+                )
+            )}
         </div>
     );
 };

@@ -9,9 +9,9 @@ interface Props {
 const PullRequest = ({ title, url, creationDate }: Props): JSX.Element => {
     return (
         <p className="contribution__pull-request">
-            <div className="contribution__pull-request--creation-date">
+            <span className="contribution__pull-request--creation-date">
                 {new Date(creationDate).toDateString()}
-            </div>
+            </span>
 
             <a
                 className="contribution__pull-request--title"
