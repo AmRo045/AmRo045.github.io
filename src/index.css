@@ -417,3 +417,13 @@ body {
         max-width: 1140px;
     }
 }
+
+#nprogress .bar {
+    background: var(--primary1) !important;
+    height: 3.4px !important;
+    border-radius: 6px !important;
+}
+
+#nprogress .spinner {
+    display: none !important;
+}
