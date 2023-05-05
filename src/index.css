@@ -423,7 +423,3 @@ body {
     height: 3.4px !important;
     border-radius: 6px !important;
 }
-
-#nprogress .spinner {
-    display: none !important;
-}
