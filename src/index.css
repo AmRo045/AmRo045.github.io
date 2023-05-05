@@ -16,6 +16,9 @@
         --scrollbar-thumb-bg: hsl(var(--brand-hue), 16%, 64%);
         --scrollbar-track-bg: transparent;
         --scrollbar-corner-bg: transparent;
+
+        --loading-skeleton-background: hsl(var(--brand-hue), 46%, 100%);
+        --loading-skeleton-foreground: hsl(var(--brand-hue), 100%, 98%);
     }
 }
 
@@ -35,6 +38,9 @@
         --scrollbar-thumb-bg: hsl(var(--brand-hue), 24%, 42%);
         --scrollbar-track-bg: transparent;
         --scrollbar-corner-bg: transparent;
+
+        --loading-skeleton-background: hsl(var(--brand-hue), 20%, 18%);
+        --loading-skeleton-foreground: hsl(var(--brand-hue), 20%, 22%);
     }
 }
 

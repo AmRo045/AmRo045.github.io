@@ -16,3 +16,6 @@ export const abbreviateNumber = (value: number): string | number => {
 
 export const convertBacktickToCodeTag = (input: string): string =>
     input.replace(/`(.*)`/, "<code>$1</code>");
+
+export const randomBetween = (min: number, max: number): number =>
+    Math.floor(Math.random() * (max - min + 1)) + min;
