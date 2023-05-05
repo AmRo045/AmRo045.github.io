@@ -51,7 +51,7 @@ export class GitHub {
         username: string,
         abortSignal: AbortSignal | undefined = undefined
     ): Promise<PullRequest[]> {
-        const apiUrl = `${baseApiUrl}/search/issues?q=author:${username}+is:pr+is:public`;
+        const apiUrl = `${baseApiUrl}/search/issues?q=is:pr+author:${username}+-user:${username}+is:public`;
         const response = await axios.get<PullRequestQueryResult>(apiUrl, {
             signal: abortSignal,
         });
