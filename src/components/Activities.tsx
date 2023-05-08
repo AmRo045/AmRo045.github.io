@@ -47,7 +47,8 @@ const Activities = (): JSX.Element => {
             </DataRow>
             <DataRow label="Posts & Articles">
                 <p>
-                    I have created lots of post and tutorial for SourceSara.Com.{" "}
+                    I have created lots of post and tutorials for
+                    SourceSara.Com.{" "}
                     <a href="https://sourcesara.com/tutorials-library/">
                         Tutorials
                     </a>
