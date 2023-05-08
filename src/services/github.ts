@@ -1,6 +1,11 @@
 import axios from "axios";
+import LocalStorageCache from "./localStorageCache";
 
 const baseApiUrl = "https://api.github.com";
+const localStorageCache = new LocalStorageCache("GITHUB_API_CACHE");
+const pullRequestsCacheKye = "PULL_REQUESTS";
+const pullRequestsCacheExpirationTime = 3_600_000; // 1 hour
+const repoInfoCacheExpirationTime = 86_400_000; // 24 hours
 
 enum PullRequestState {
     OPEN = "open",
@@ -52,9 +57,20 @@ export class GitHub {
         abortSignal: AbortSignal | undefined = undefined
     ): Promise<PullRequest[]> {
         const apiUrl = `${baseApiUrl}/search/issues?q=is:pr+author:${username}+-user:${username}+is:public`;
+
+        const cachedValue =
+            localStorageCache.get<PullRequest[]>(pullRequestsCacheKye);
+        if (cachedValue) return Promise.resolve(cachedValue);
+
         const response = await axios.get<PullRequestQueryResult>(apiUrl, {
             signal: abortSignal,
         });
+
+        localStorageCache.set<PullRequest[]>(
+            pullRequestsCacheKye,
+            response.data?.items,
+            pullRequestsCacheExpirationTime
+        );
 
         return response.data?.items;
     }
@@ -108,9 +124,18 @@ export class GitHub {
         url: string,
         abortSignal: AbortSignal | undefined
     ): Promise<RepositoryInfo> {
+        const cachedValue = localStorageCache.get<RepositoryInfo>(url);
+        if (cachedValue) return Promise.resolve(cachedValue);
+
         const response = await axios.get<RepositoryInfo>(url, {
             signal: abortSignal,
         });
+
+        localStorageCache.set<RepositoryInfo>(
+            url,
+            response.data,
+            repoInfoCacheExpirationTime
+        );
 
         return response.data;
     }
