@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Card from "./Card";
 import DataRow from "./DataRow";
+import { calculateAge } from "../utils";
 
 type Item = {
     label: string;
@@ -10,7 +11,7 @@ type Item = {
 const data: Item[] = [
     {
         label: "🎂 Date of Birth",
-        value: "1997-8-14",
+        value: `1997-08-14 (${calculateAge("1997-08-14")})`,
     },
     {
         label: "♂ Gender",
