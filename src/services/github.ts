@@ -1,4 +1,11 @@
 import axios from "axios";
+import {
+    AuthorAssociationType,
+    Contribution,
+    PullRequest,
+    PullRequestQueryResult,
+    RepositoryInfo,
+} from "../entities/GitHub";
 import LocalStorageCache from "./localStorageCache";
 
 const baseApiUrl = "https://api.github.com";
@@ -6,50 +13,6 @@ const localStorageCache = new LocalStorageCache("GITHUB_API_CACHE");
 const pullRequestsCacheKye = "PULL_REQUESTS";
 const pullRequestsCacheExpirationTime = 3_600_000; // 1 hour
 const repoInfoCacheExpirationTime = 86_400_000; // 24 hours
-
-enum PullRequestState {
-    OPEN = "open",
-    CLOSED = "closed",
-}
-
-enum AuthorAssociationType {
-    NONE = "NONE",
-    OWNER = "OWNER",
-    CONTRIBUTOR = "CONTRIBUTOR",
-}
-
-interface PullRequestInfo {
-    html_url: string;
-    merged_at: string | null;
-}
-
-export interface PullRequest {
-    title: string;
-    repository_url: string;
-    pull_request: PullRequestInfo;
-    state: PullRequestState;
-    author_association: AuthorAssociationType;
-    created_at: string;
-}
-
-interface PullRequestQueryResult {
-    items: PullRequest[];
-}
-
-export interface RepositoryInfo {
-    id: number;
-    name: string;
-    full_name: string;
-    description: string;
-    html_url: string;
-    stargazers_count: number;
-    forks_count: number;
-}
-
-export interface Contribution {
-    repo: RepositoryInfo;
-    pullRequests: PullRequest[];
-}
 
 export class GitHub {
     public static async getPullRequests(
