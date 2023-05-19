@@ -1,3 +1,4 @@
+import ReactGA from "react-ga4";
 import { convertBacktickToCodeTag } from "../utils";
 
 interface Props {
@@ -7,6 +8,16 @@ interface Props {
 }
 
 const PullRequest = ({ title, url, creationDate }: Props): JSX.Element => {
+    const reportClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
+        const label = e.currentTarget.href;
+
+        ReactGA.event({
+            category: "PullRequest",
+            label,
+            action: "click",
+        });
+    };
+
     return (
         <p className="contribution__pull-request">
             <span className="contribution__pull-request--creation-date">
@@ -18,6 +29,7 @@ const PullRequest = ({ title, url, creationDate }: Props): JSX.Element => {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={reportClick}
                 dangerouslySetInnerHTML={{
                     __html: convertBacktickToCodeTag(title),
                 }}
