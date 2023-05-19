@@ -13,8 +13,8 @@ const data: Item[] = [
         value: "MyEmailBox045@Gmail.Com",
     },
     {
-        label: "📞 Phone Number",
-        value: "+98 914-619-0965",
+        label: "💬 Telegram",
+        value: "@AmRo045",
     },
 ];
 
