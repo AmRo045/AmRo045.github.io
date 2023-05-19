@@ -30,7 +30,7 @@ const data: Item[] = [
     },
     {
         label: "📌 Location",
-        value: "Iran ➡ Tehran ➡ Eslamshahr",
+        value: "Iran ➡ Tehran",
     },
 ];
 
