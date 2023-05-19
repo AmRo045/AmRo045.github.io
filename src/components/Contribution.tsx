@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import {
     Contribution as ContributionType,
     PullRequest as PullRequestType,
-} from "../services/github";
+} from "../entities/GitHub";
 import { abbreviateNumber } from "../utils";
 import PullRequest from "./PullRequest";
 

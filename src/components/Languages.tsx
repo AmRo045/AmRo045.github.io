@@ -14,7 +14,7 @@ const data: Item[] = [
     },
     {
         label: "Persian",
-        value: "🧐 Advanced",
+        value: "🧐 Fluent",
     },
     {
         label: "English",

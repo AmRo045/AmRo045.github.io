@@ -19,3 +19,8 @@ export const convertBacktickToCodeTag = (input: string): string =>
 
 export const randomBetween = (min: number, max: number): number =>
     Math.floor(Math.random() * (max - min + 1)) + min;
+
+export const calculateAge = (dateOfBirth: string): number => {
+    const ageDiff: number = Date.now() - new Date(dateOfBirth).getTime();
+    return Math.abs(new Date(ageDiff).getUTCFullYear() - 1970);
+};
