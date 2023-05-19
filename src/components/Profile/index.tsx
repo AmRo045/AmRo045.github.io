@@ -9,6 +9,7 @@ import { ReactNode } from "react";
 import Avatar from "./Avatar";
 import Bio from "./Bio";
 import SocialLink from "./SocialLink";
+import ThemeSwitcher from "../ThemeSwitcher";
 
 type SocialLinkItem = {
     url: string;
@@ -45,6 +46,10 @@ const socialLinks: SocialLinkItem[] = [
 const Profile = (): JSX.Element => {
     return (
         <div className="card profile">
+            <div className="profile__theme-switch">
+                <ThemeSwitcher />
+            </div>
+
             <Avatar />
             <Bio />
 
