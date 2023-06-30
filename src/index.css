@@ -1,6 +1,8 @@
 @import url(./assets/css/fonts.css);
 
 :root {
+    color-scheme: light dark;
+
     --primary1: transparent;
     --surface1: transparent;
     --text: transparent;
@@ -20,6 +22,8 @@ html[data-theme="light"] {
     --primary1: hsl(var(--brand-hue), 64%, 58%);
     --primary2: hsl(var(--brand-hue), 64%, 42%);
 
+    --text-decoration-color: hsl(var(--brand-hue), 64%, 58%, 46%);
+
     --shadow: hsla(0, 0%, 0%, 0.03) 0 1px 30px, hsla(0, 0%, 0%, 0.05) 0 1px 2px;
 
     --scrollbar-thumb-bg: hsl(var(--brand-hue), 16%, 64%);
@@ -38,6 +42,8 @@ html[data-theme="dark"] {
     --text: hsl(var(--brand-hue), 58%, 82%);
     --primary1: hsl(var(--brand-hue), 90%, 75%);
     --primary2: hsl(var(--brand-hue), 90%, 85%);
+
+    --text-decoration-color: hsl(var(--brand-hue), 90%, 75%, 46%);
 
     --shadow: hsla(0, 0%, 0%, 0.03) 0 1px 30px, hsla(0, 0%, 0%, 0.05) 0 1px 2px;
 
@@ -105,25 +111,6 @@ a:hover {
     color: var(--primary2);
 }
 
-a::after {
-    position: absolute;
-    content: "";
-    bottom: calc(50% - 4px);
-    left: 100%;
-    right: 100%;
-    height: 0.16rem;
-    border-radius: 999px;
-    transform: translateY(14px);
-    transition: right 275ms 0.3s, left 275ms;
-    background-color: var(--primary2);
-}
-
-a:hover::after {
-    right: 0;
-    left: 0;
-    transition: right 275ms;
-}
-
 body {
     min-block-size: 100vh;
     margin: 0;
@@ -131,6 +118,32 @@ body {
 
     background-color: var(--surface1);
     color: var(--text);
+}
+
+.styled-link {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--text-decoration-color);
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.42rem;
+
+    transition: all 0.16s linear;
+}
+
+.styled-link:hover {
+    text-decoration-color: var(--primary2);
+    text-underline-offset: 0.26rem;
+    text-decoration-style: wavy;
+}
+
+.styled-link:focus-visible {
+    text-decoration: none;
+}
+
+.styled-link:visited,
+.styled-link:active {
+    color: var(--text);
+    text-decoration-color: var(--text);
 }
 
 .container {
@@ -227,7 +240,9 @@ body {
 }
 
 .profile__links a {
-    padding-block-end: 0.14rem;
+    background: var(--surface1);
+    padding: 0.36rem;
+    border-radius: 100%;
 }
 
 .profile__links a svg {
@@ -237,7 +252,7 @@ body {
 
 .card {
     background-color: var(--surface2);
-    padding: 24px;
+    padding: 1.2rem;
 
     inline-size: 100%;
 
@@ -326,6 +341,10 @@ body {
     grid-area: contributions;
 }
 
+.card--contributions .card-content {
+    padding: 0;
+}
+
 .skill-card {
     display: flex;
     align-items: center;
@@ -345,6 +364,8 @@ body {
     padding: 0.28rem;
     background-color: var(--surface2);
     border-radius: 6px;
+
+    aspect-ratio: 1/1;
 }
 
 .skill-card__name {
@@ -371,6 +392,8 @@ body {
 .contribution__repo--title {
     font-weight: 600;
     font-size: 1.24rem;
+    word-break: break-all;
+    text-wrap: balance;
 }
 
 .contribution__repo--description {
@@ -389,6 +412,7 @@ body {
 
     padding-inline: 1rem;
     margin: 0;
+    line-height: 1.6;
 }
 
 .contribution__pull-request--creation-date {
@@ -401,6 +425,7 @@ body {
     display: inline-block;
     font-weight: 600;
     white-space: initial;
+    text-wrap: balance;
 }
 
 @media (min-width: 576px) {

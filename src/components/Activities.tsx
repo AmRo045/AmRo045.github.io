@@ -16,13 +16,20 @@ const Activities = (): JSX.Element => {
     return (
         <Card type="activities" header="Activities">
             <DataRow label="School Enrollment Website">
-                <a href="http://kherad-reyhan.com/" onClick={reportClick}>
+                <a
+                    href="http://kherad-reyhan.com/"
+                    onClick={reportClick}
+                    className="styled-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Old Version (Plain PHP)
                 </a>
                 {" -> "}
                 <a
                     href="https://www.dropbox.com/s/irbiv7tz6l04f1l/kherad-reyhan.test.mp4?dl=0"
                     onClick={reportClick}
+                    className="styled-link"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -34,6 +41,7 @@ const Activities = (): JSX.Element => {
                     A material management system for{" "}
                     <a
                         href="https://arcogroup.org"
+                        className="styled-link"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={reportClick}
@@ -43,6 +51,7 @@ const Activities = (): JSX.Element => {
                     company.{" "}
                     <a
                         href="https://www.dropbox.com/s/zhrvf3qdyt5813f/MaterialHub.mp4?dl=0"
+                        className="styled-link"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={reportClick}
@@ -56,6 +65,7 @@ const Activities = (): JSX.Element => {
                     Simple Windows application for Shecan service.{" "}
                     <a
                         href="https://github.com/AmRo045/ShecanDesktop"
+                        className="styled-link"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={reportClick}
@@ -70,6 +80,7 @@ const Activities = (): JSX.Element => {
                     purposes).{" "}
                     <a
                         href="https://sourcesara.com/c-sharp-messenger-application/"
+                        className="styled-link"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={reportClick}
@@ -83,6 +94,7 @@ const Activities = (): JSX.Element => {
                     A shop management system.{" "}
                     <a
                         href="https://www.dropbox.com/scl/fo/ezf7lifprsl7gwrsj99b4/h?dl=0&rlkey=n2t8dcztquj47nxk9o8888or9"
+                        className="styled-link"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={reportClick}
@@ -97,6 +109,7 @@ const Activities = (): JSX.Element => {
                     SourceSara.Com.{" "}
                     <a
                         href="https://sourcesara.com/tutorials-library/"
+                        className="styled-link"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={reportClick}
@@ -106,6 +119,7 @@ const Activities = (): JSX.Element => {
                     ,{" "}
                     <a
                         href="https://sourcesara.com/category/all-category/?cat_id=5"
+                        className="styled-link"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={reportClick}
@@ -115,6 +129,7 @@ const Activities = (): JSX.Element => {
                     and{" "}
                     <a
                         href="https://virgool.io/@sourcesara.info"
+                        className="styled-link"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={reportClick}
