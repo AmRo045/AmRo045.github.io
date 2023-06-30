@@ -210,7 +210,9 @@ body {
 }
 
 .profile__links a {
-    padding-block-end: 0.14rem;
+    background: var(--surface1);
+    padding: 0.36rem;
+    border-radius: 100%;
 }
 
 .profile__links a svg {
