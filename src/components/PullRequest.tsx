@@ -19,7 +19,7 @@ const PullRequest = ({ title, url, creationDate }: Props): JSX.Element => {
     };
 
     return (
-        <p className="contribution__pull-request">
+        <div className="contribution__pull-request">
             <span className="contribution__pull-request--creation-date">
                 {new Date(creationDate).toDateString()}
             </span>
@@ -34,7 +34,7 @@ const PullRequest = ({ title, url, creationDate }: Props): JSX.Element => {
                     __html: convertBacktickToCodeTag(title),
                 }}
             ></a>
-        </p>
+        </div>
     );
 };
 
