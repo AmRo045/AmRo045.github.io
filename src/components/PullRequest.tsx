@@ -25,7 +25,7 @@ const PullRequest = ({ title, url, creationDate }: Props): JSX.Element => {
             </span>
 
             <a
-                className="contribution__pull-request--title"
+                className="contribution__pull-request--title styled-link"
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"

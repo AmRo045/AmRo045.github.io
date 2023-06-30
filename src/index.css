@@ -22,6 +22,8 @@ html[data-theme="light"] {
     --primary1: hsl(var(--brand-hue), 64%, 58%);
     --primary2: hsl(var(--brand-hue), 64%, 42%);
 
+    --text-decoration-color: hsl(var(--brand-hue), 64%, 58%, 46%);
+
     --shadow: hsla(0, 0%, 0%, 0.03) 0 1px 30px, hsla(0, 0%, 0%, 0.05) 0 1px 2px;
 
     --scrollbar-thumb-bg: hsl(var(--brand-hue), 16%, 64%);
@@ -40,6 +42,8 @@ html[data-theme="dark"] {
     --text: hsl(var(--brand-hue), 58%, 82%);
     --primary1: hsl(var(--brand-hue), 90%, 75%);
     --primary2: hsl(var(--brand-hue), 90%, 85%);
+
+    --text-decoration-color: hsl(var(--brand-hue), 90%, 75%, 46%);
 
     --shadow: hsla(0, 0%, 0%, 0.03) 0 1px 30px, hsla(0, 0%, 0%, 0.05) 0 1px 2px;
 
@@ -114,6 +118,32 @@ body {
 
     background-color: var(--surface1);
     color: var(--text);
+}
+
+.styled-link {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--text-decoration-color);
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.42rem;
+
+    transition: all 0.16s linear;
+}
+
+.styled-link:hover {
+    text-decoration-color: var(--primary2);
+    text-underline-offset: 0.26rem;
+    text-decoration-style: wavy;
+}
+
+.styled-link:focus-visible {
+    text-decoration: none;
+}
+
+.styled-link:visited,
+.styled-link:active {
+    color: var(--text);
+    text-decoration-color: var(--text);
 }
 
 .container {
