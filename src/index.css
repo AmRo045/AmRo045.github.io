@@ -1,6 +1,8 @@
 @import url(./assets/css/fonts.css);
 
 :root {
+    color-scheme: light dark;
+
     --primary1: transparent;
     --surface1: transparent;
     --text: transparent;
