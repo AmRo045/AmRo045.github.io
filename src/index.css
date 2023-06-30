@@ -360,6 +360,8 @@ body {
     padding: 0.28rem;
     background-color: var(--surface2);
     border-radius: 6px;
+
+    aspect-ratio: 1/1;
 }
 
 .skill-card__name {
