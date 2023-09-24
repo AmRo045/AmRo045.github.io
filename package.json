@@ -1,52 +1,29 @@
 {
-    "name": "amro",
+    "name": "amro045-gh-page",
     "version": "0.1.0",
     "homepage": "https://amro045.github.io/",
     "private": true,
-    "dependencies": {
-        "@testing-library/jest-dom": "^5.14.1",
-        "@testing-library/react": "^13.0.0",
-        "@testing-library/user-event": "^13.2.1",
-        "@types/jest": "^27.0.1",
-        "@types/node": "^16.7.13",
-        "@types/react": "^18.0.0",
-        "@types/react-dom": "^18.0.0",
-        "axios": "^1.4.0",
-        "nprogress": "^0.2.0",
-        "react": "^18.2.0",
-        "react-content-loader": "^6.2.1",
-        "react-dom": "^18.2.0",
-        "react-ga4": "^2.1.0",
-        "react-scripts": "5.0.1",
-        "typescript": "^4.4.2",
-        "web-vitals": "^2.1.0"
-    },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --passWithNoTests",
-        "test-ci": "react-scripts test --watchAll=false --passWithNoTests",
-        "eject": "react-scripts eject"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
     },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
+    "dependencies": {
+        "@types/node": "20.6.4",
+        "@types/react": "18.2.22",
+        "@types/react-dom": "18.2.7",
+        "axios": "^1.5.0",
+        "eslint": "8.50.0",
+        "eslint-config-next": "13.5.2",
+        "next": "13.5.2",
+        "nprogress": "^0.2.0",
+        "react": "18.2.0",
+        "react-content-loader": "^6.2.1",
+        "react-dom": "18.2.0",
+        "typescript": "5.2.2"
     },
     "devDependencies": {
-        "@types/nprogress": "^0.2.0"
+        "@types/nprogress": "^0.2.1"
     }
 }
