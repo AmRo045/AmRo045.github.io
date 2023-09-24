@@ -207,15 +207,18 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    stroke-width: 24;
+    stroke-width: 36;
     fill: var(--primary1);
     stroke: var(--primary1);
 }
 
 .profile__avatar svg:last-of-type {
+    position: relative;
     fill: var(--surface1);
     inline-size: 10rem;
     transform: scale(0.76);
+
+    transition: 0.24s ease-in-out;
 }
 
 .profile__name {
@@ -481,4 +484,8 @@ body {
 
 #nprogress .spinner {
     display: none !important;
+}
+
+.no-fill {
+    fill: none !important;
 }

@@ -1,7 +1,33 @@
-export default function StackOverFlowIcon() {
+import { SVGProps } from "react";
+
+export default function StackOverFlowIcon(props: SVGProps<SVGSVGElement>) {
     return (
-        <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.36,20.2V14.82H19.15V22H3V14.82H4.8V20.2H17.36M6.77,14.32L7.14,12.56L15.93,14.41L15.56,16.17L6.77,14.32M7.93,10.11L8.69,8.5L16.83,12.28L16.07,13.9L7.93,10.11M10.19,6.12L11.34,4.74L18.24,10.5L17.09,11.87L10.19,6.12M14.64,1.87L20,9.08L18.56,10.15L13.2,2.94L14.64,1.87M6.59,18.41V16.61H15.57V18.41H6.59Z" />
+        <svg viewBox="0 0 24 24" {...props}>
+            <path
+                fill="currentColor"
+                fillOpacity="0"
+                stroke="currentColor"
+                strokeDasharray="62"
+                strokeDashoffset="62"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1M8 16h8m-7.678-3.418l7.956.836m-7.491-4.25l7.826 1.664m-6.517-5.068l7.608 2.472"
+            >
+                <animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    dur="0.6s"
+                    values="62;0"
+                />
+                <animate
+                    fill="freeze"
+                    attributeName="fill-opacity"
+                    begin="0.6s"
+                    dur="0.15s"
+                    values="0;0.3"
+                />
+            </path>
         </svg>
     );
 }

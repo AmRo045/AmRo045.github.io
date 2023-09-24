@@ -1,6 +1,8 @@
-export default function JavaIcon() {
+import { SVGProps } from "react";
+
+export default function JavaIcon(props: SVGProps<SVGSVGElement>) {
     return (
-        <svg viewBox="0 0 305.001 305.001" fill="currentColor">
+        <svg viewBox="0 0 305.001 305.001" fill="currentColor" {...props}>
             <path
                 d="M150.99,56.513c-14.093,9.912-30.066,21.147-38.624,39.734c-14.865,32.426,30.418,67.798,32.353,69.288
 		c0.45,0.347,0.988,0.519,1.525,0.519c0.57,0,1.141-0.195,1.605-0.583c0.899-0.752,1.154-2.029,0.614-3.069

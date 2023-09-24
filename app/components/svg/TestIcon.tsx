@@ -1,6 +1,8 @@
-export default function TestIcon() {
+import { SVGProps } from "react";
+
+export default function TestIcon(props: SVGProps<SVGSVGElement>) {
     return (
-        <svg viewBox="0 0 16.057 16.057" fill="currentColor">
+        <svg viewBox="0 0 16.057 16.057" fill="currentColor" {...props}>
             <path
                 d="M9.194,8.744c0.461,0,0.835,0.374,0.835,0.835s-0.374,0.835-0.835,0.835S8.359,10.04,8.359,9.579
 		C8.359,9.118,8.733,8.744,9.194,8.744z M6.807,8.315c-0.449,0-0.813,0.364-0.813,0.813s0.364,0.813,0.813,0.813

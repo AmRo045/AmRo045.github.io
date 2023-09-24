@@ -1,6 +1,8 @@
-export default function AvatarBg() {
+import { SVGProps } from "react";
+
+export default function AvatarBg(props: SVGProps<SVGSVGElement>) {
     return (
-        <svg viewBox="0 0 512 512" fill="currentColor">
+        <svg viewBox="0 0 512 512" strokeOpacity="0" fillOpacity="0" {...props}>
             <path
                 d="M256.5,8c25.62,0,47.21,23.57,70.32,31.07c23.96,7.78,55.22,1.67,75.17,16.18c20.14,14.66,23.92,46.38,38.58,66.52
 		c14.51,19.94,43.6,33.26,51.38,57.22c7.51,23.12-7.95,50.88-7.95,76.5c0,25.62,15.45,53.38,7.95,76.5
@@ -9,6 +11,19 @@ export default function AvatarBg() {
 		c-20.14-14.66-23.92-46.38-38.58-66.52c-14.51-19.94-43.6-33.26-51.38-57.22C13.55,308.88,29,281.12,29,255.5
 		c0-25.62-15.45-53.38-7.95-76.5c7.78-23.96,36.86-37.28,51.38-57.22c14.66-20.14,18.44-51.86,38.58-66.52
 		c19.94-14.51,51.21-8.4,75.17-16.18C209.29,31.57,230.88,8,256.5,8z"
+            />
+            <animate
+                fill="freeze"
+                attributeName="fill-opacity"
+                dur="0.28s"
+                values="0;1"
+            />
+
+            <animate
+                fill="freeze"
+                attributeName="stroke-opacity"
+                dur="2s"
+                values="0;0.3"
             />
         </svg>
     );

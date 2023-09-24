@@ -15,12 +15,17 @@
 
 .button:focus-visible {
     outline-width: 2px;
+    outline-color: var(--theme-switcher-text);
 }
 
 .button svg {
-    width: 24px;
+    inline-size: 24px;
+}
+
+.button svg,
+.button svg * {
     fill: var(--theme-switcher-text);
-    animation: show 0.18s ease-in-out forwards;
+    stroke: var(--theme-switcher-text);
 }
 
 @keyframes show {
