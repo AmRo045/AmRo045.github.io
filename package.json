@@ -1,22 +1,29 @@
 {
-  "name": "amro045-gh-page",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/node": "20.6.4",
-    "@types/react": "18.2.22",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.50.0",
-    "eslint-config-next": "13.5.2",
-    "next": "13.5.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.2.2"
-  }
+    "name": "amro045-gh-page",
+    "version": "0.1.0",
+    "homepage": "https://amro045.github.io/",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@types/node": "20.6.4",
+        "@types/react": "18.2.22",
+        "@types/react-dom": "18.2.7",
+        "axios": "^1.5.0",
+        "eslint": "8.50.0",
+        "eslint-config-next": "13.5.2",
+        "next": "13.5.2",
+        "nprogress": "^0.2.0",
+        "react": "18.2.0",
+        "react-content-loader": "^6.2.1",
+        "react-dom": "18.2.0",
+        "typescript": "5.2.2"
+    },
+    "devDependencies": {
+        "@types/nprogress": "^0.2.1"
+    }
 }
