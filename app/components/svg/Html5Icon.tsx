@@ -1,6 +1,8 @@
-export default function Html5Icon() {
+import { SVGProps } from "react";
+
+export default function Html5Icon(props: SVGProps<SVGSVGElement>) {
     return (
-        <svg viewBox="0 0 27.17 27.17" fill="currentColor">
+        <svg viewBox="0 0 27.17 27.17" fill="currentColor" {...props}>
             <path
                 d="M1.609,0.008c0.013,0.129,0.023,0.248,0.033,0.367c0.103,1.153,0.203,2.307,0.307,3.459
 		c0.132,1.465,0.265,2.933,0.395,4.397c0.11,1.232,0.219,2.467,0.328,3.7c0.124,1.389,0.249,2.777,0.373,4.167

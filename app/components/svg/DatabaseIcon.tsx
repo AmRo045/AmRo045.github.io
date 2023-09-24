@@ -1,6 +1,8 @@
-export default function DatabaseIcon() {
+import { SVGProps } from "react";
+
+export default function DatabaseIcon(props: SVGProps<SVGSVGElement>) {
     return (
-        <svg viewBox="0 0 29.26 29.26" fill="currentColor">
+        <svg viewBox="0 0 29.26 29.26" fill="currentColor" {...props}>
             <path
                 d="M14.627,15.954c-5.494,0-10.098-1.614-11.355-3.79c-0.221,0.383-0.35,0.781-0.35,1.194v3.561
 		c0,2.751,5.242,4.983,11.705,4.983c6.467,0,11.711-2.232,11.711-4.983v-3.561c0-0.413-0.131-0.811-0.354-1.194

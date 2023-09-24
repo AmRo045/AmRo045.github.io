@@ -7,7 +7,7 @@ interface Props {
 
 const SocialLink = ({ url, icon }: Props): JSX.Element => {
     return (
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a href={url} target="_blank" rel="noopener noreferrer" title={url}>
             {icon}
         </a>
     );

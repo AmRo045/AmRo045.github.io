@@ -1,7 +1,39 @@
-export default function LinkedInIcon() {
+import { SVGProps } from "react";
+
+export default function LinkedInIcon(props: SVGProps<SVGSVGElement>) {
     return (
-        <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+        <svg viewBox="0 0 256 256" {...props}>
+            <g fill="currentColor">
+                <path
+                    d="M224 40v176a8 8 0 0 1-8 8H40a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h176a8 8 0 0 1 8 8Z"
+                    fillOpacity="0"
+                >
+                    <animate
+                        fill="freeze"
+                        attributeName="fill-opacity"
+                        begin="0.6s"
+                        dur="0.15s"
+                        values="0;0.3"
+                    />
+                </path>
+                <path
+                    d="M216 24H40a16 16 0 0 0-16 16v176a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V40a16 16 0 0 0-16-16Zm0 192H40V40h176v176ZM96 112v64a8 8 0 0 1-16 0v-64a8 8 0 0 1 16 0Zm88 28v36a8 8 0 0 1-16 0v-36a20 20 0 0 0-40 0v36a8 8 0 0 1-16 0v-64a8 8 0 0 1 15.79-1.78A36 36 0 0 1 184 140Zm-84-56a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"
+                    fill="currentColor"
+                    fillOpacity="0"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                >
+                    <animate
+                        fill="freeze"
+                        attributeName="fill-opacity"
+                        begin="0.6s"
+                        dur="0.15s"
+                        values="0;1"
+                    />
+                </path>
+            </g>
         </svg>
     );
 }

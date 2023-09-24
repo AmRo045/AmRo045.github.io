@@ -56,7 +56,7 @@ const ThemeSwitcher = (): JSX.Element => {
     if (!isRestored) return <></>;
 
     return (
-        <button className={styles.button} onClick={handleClick}>
+        <button className={styles.button} onClick={handleClick} title={theme}>
             {getIcon()}
         </button>
     );
