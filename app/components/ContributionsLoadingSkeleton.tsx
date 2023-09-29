@@ -1,5 +1,5 @@
 import ContentLoader from "react-content-loader";
-import { randomBetween } from "../utils";
+import { randomBetween } from "@/app/utils";
 
 interface Props {
     speed?: number;

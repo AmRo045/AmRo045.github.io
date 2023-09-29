@@ -1,13 +1,20 @@
 type Props = {
-    type: string;
-    header: string;
+    type:
+        | "activities"
+        | "activities-details"
+        | "basic-info"
+        | "contributions"
+        | "languages"
+        | "contact-info"
+        | "skills";
+    header?: string;
     children?: React.ReactNode;
 };
 
 const Card = ({ type, header, children }: Props): JSX.Element => {
     return (
         <div className={`card card--${type}`}>
-            <div className="card__header">{header}</div>
+            {header && <div className="card__header">{header}</div>}
             <div className="card__content">{children}</div>
         </div>
     );

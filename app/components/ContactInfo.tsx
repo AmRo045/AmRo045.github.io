@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import Card from "./common/Card";
-import DataRow from "./common/DataRow";
+import Card from "@/app/components/common/Card";
+import DataRow from "@/app/components/common/DataRow";
 
 type Item = {
     label: string;

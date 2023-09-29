@@ -1,12 +1,12 @@
 "use client";
 
-import Activities from "./components/Activities";
-import BasicInfo from "./components/BasicInfo";
-import ContactInfo from "./components/ContactInfo";
-import Contributions from "./components/Contributions";
-import Languages from "./components/Languages";
-import Profile from "./components/profile";
-import Skills from "./components/Skills";
+import Activities from "@/app/components/Activities";
+import BasicInfo from "@/app/components/BasicInfo";
+import ContactInfo from "@/app/components/ContactInfo";
+import Contributions from "@/app/components/Contributions";
+import Languages from "@/app/components/Languages";
+import Profile from "@/app/components/profile";
+import Skills from "@/app/components/Skills";
 
 export default function HomePage() {
     return (

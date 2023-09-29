@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 import {
     Contribution as ContributionType,
     PullRequest as PullRequestType,
-} from "../entities/GitHub";
-import { abbreviateNumber } from "../utils";
-import PullRequest from "./PullRequest";
+} from "@/app/entities/GitHub";
+import { abbreviateNumber } from "@/app/utils";
+import PullRequest from "@/app/components/PullRequest";
 
 interface Props {
     contribution: ContributionType;

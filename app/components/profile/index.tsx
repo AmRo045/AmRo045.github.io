@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
-import ThemeSwitcher from "../ThemeSwitcher";
-import GitHubIcon from "../svg/GitHubIcon";
-import InstagramIcon from "../svg/InstagramIcon";
-import LeetCodeIcon from "../svg/LeetCodeIcon";
-import LinkedInIcon from "../svg/LinkedInIcon";
-import StackOverFlowIcon from "../svg/StackOverFlowIcon";
-import TwitterIcon from "../svg/TwitterIcon";
-import Avatar from "./Avatar";
-import Bio from "./Bio";
-import SocialLink from "./SocialLink";
+import ThemeSwitcher from "@/app/components/ThemeSwitcher";
+import GitHubIcon from "@/app/components/svg/GitHubIcon";
+import InstagramIcon from "@/app/components/svg/InstagramIcon";
+import LeetCodeIcon from "@/app/components/svg/LeetCodeIcon";
+import LinkedInIcon from "@/app/components/svg/LinkedInIcon";
+import StackOverFlowIcon from "@/app/components/svg/StackOverFlowIcon";
+import TwitterIcon from "@/app/components/svg/TwitterIcon";
+import Avatar from "@/app/components/profile/Avatar";
+import Bio from "@/app/components/profile/Bio";
+import SocialLink from "@/app/components/profile/SocialLink";
 
 type SocialLinkItem = {
     url: string;

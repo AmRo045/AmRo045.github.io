@@ -1,4 +1,4 @@
-import { convertBacktickToCodeTag } from "../utils";
+import { convertBacktickToCodeTag } from "@/app/utils";
 
 interface Props {
     title: string;

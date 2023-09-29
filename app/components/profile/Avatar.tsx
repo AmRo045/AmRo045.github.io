@@ -1,5 +1,5 @@
-import AvatarBg from "../svg/AvatarBg";
-import AmRoLogo from "../svg/Avatar";
+import AvatarBg from "@/app/components/svg/AvatarBg";
+import AmRoLogo from "@/app/components/svg/Avatar";
 
 const Avatar = (): JSX.Element => {
     return (

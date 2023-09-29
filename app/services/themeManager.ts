@@ -1,5 +1,5 @@
-import { Emitter } from "./emitter";
-import { Storage } from "./storage";
+import { Emitter } from "@/app/services/emitter";
+import { Storage } from "@/app/services/storage";
 
 export enum Theme {
     Light = "light",
