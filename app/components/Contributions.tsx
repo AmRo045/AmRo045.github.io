@@ -20,15 +20,15 @@ const Contributions = (): JSX.Element => {
         GitHub.getContributions("AmRo045", abortController.signal)
             .then((data: Contribution[]) => {
                 setContributions(data);
-                nProgress.done();
-                setIsLoading(false);
             })
             .catch((error) => {
                 if (error.name !== "CanceledError") {
-                    nProgress.done();
-                    setIsLoading(false);
                     setError(error.message);
                 }
+            })
+            .finally(() => {
+                nProgress.done();
+                setIsLoading(false);
             });
 
         return () => abortController.abort();
