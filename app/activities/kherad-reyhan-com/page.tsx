@@ -7,6 +7,8 @@ import Header from "@/app/components/Header";
 export default function KheradReyhanComPage(): JSX.Element {
     return (
         <>
+            <title>Kherad-Reyhan.Com | Amin Rostami</title>
+
             <Header title="Kherad-Rayhan.Com" />
 
             <Card type="activities-details">

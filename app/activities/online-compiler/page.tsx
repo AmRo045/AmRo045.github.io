@@ -7,6 +7,8 @@ import Header from "@/app/components/Header";
 export default function OnlineCompilerPage(): JSX.Element {
     return (
         <>
+            <title>Online Compiler | Amin Rostami</title>
+
             <Header title="Online Compiler" />
 
             <Card type="activities-details">

@@ -7,6 +7,8 @@ import Header from "@/app/components/Header";
 export default function MaterialHubPage(): JSX.Element {
     return (
         <>
+            <title>Material Hub | Amin Rostami</title>
+
             <Header title="Material Hub" />
 
             <Card type="activities-details">

@@ -7,6 +7,8 @@ import Header from "@/app/components/Header";
 export default function ShecanDesktopPage(): JSX.Element {
     return (
         <>
+            <title>Shecan Desktop | Amin Rostami</title>
+
             <Header title="Shecan Desktop" />
 
             <Card type="activities-details">

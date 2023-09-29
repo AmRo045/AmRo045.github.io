@@ -7,6 +7,8 @@ import Header from "@/app/components/Header";
 export default function ShopManagementPage(): JSX.Element {
     return (
         <>
+            <title>Shop Management | Amin Rostami</title>
+
             <Header title="Shop Management System (WPF)" />
 
             <Card type="activities-details">

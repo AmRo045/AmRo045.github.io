@@ -7,7 +7,9 @@ import Header from "@/app/components/Header";
 export default function CSharpMessagePage(): JSX.Element {
     return (
         <>
-            <Header title="C# Messenger (WPF)" />
+            <title>C# Messenger | Amin Rostami</title>
+
+            <Header title="C# Messenger" />
 
             <Card type="activities-details">
                 <div className="activity-description">
