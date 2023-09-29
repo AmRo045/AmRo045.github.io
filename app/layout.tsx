@@ -1,10 +1,13 @@
+"use client";
+
 import "./globals.css";
 import "nprogress/nprogress.css";
 
 import nProgress from "nprogress";
 import type { Metadata } from "next";
+import { ThemeProvider } from "./providers/ThemeProvider";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
     title: "Amin Rostami",
     description: "My personal page | AmRo | AmRo045",
 };
@@ -29,7 +32,9 @@ export default function RootLayout({
                 />
             </head>
             <body>
-                <div className="container">{children}</div>
+                <ThemeProvider>
+                    <div className="container">{children}</div>
+                </ThemeProvider>
             </body>
         </html>
     );
