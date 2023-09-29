@@ -5,6 +5,7 @@ type Props = {
         | "basic-info"
         | "contributions"
         | "languages"
+        | "contact-info"
         | "skills";
     header?: string;
     children?: React.ReactNode;

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import BackIcon from "./svg/BackIcon";
-import ThemeSwitcher from "./ThemeSwitcher";
+import BackIcon from "@/app/components/svg/BackIcon";
+import ThemeSwitcher from "@/app/components/ThemeSwitcher";
 
 type Props = {
     title: string;

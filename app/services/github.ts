@@ -5,8 +5,8 @@ import {
     PullRequest,
     PullRequestQueryResult,
     RepositoryInfo,
-} from "../entities/GitHub";
-import LocalStorageCache from "./localStorageCache";
+} from "@/app/entities/GitHub";
+import LocalStorageCache from "@/app/services/localStorageCache";
 
 const baseApiUrl = "https://api.github.com";
 const localStorageCache = new LocalStorageCache("GITHUB_API_CACHE");

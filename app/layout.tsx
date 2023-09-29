@@ -1,10 +1,10 @@
 "use client";
 
-import "./globals.css";
+import "@/app/globals.css";
 import "nprogress/nprogress.css";
 
 import nProgress from "nprogress";
-import { ThemeProvider } from "./providers/ThemeProvider";
+import { ThemeProvider } from "@/app/providers/ThemeProvider";
 
 export default function RootLayout({
     children,

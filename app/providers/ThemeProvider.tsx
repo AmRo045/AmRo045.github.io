@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { Theme, ThemeManager } from "../services/themeManager";
+import { Theme, ThemeManager } from "@/app/services/themeManager";
 
 type ThemeContextProps = {
     theme: Theme;

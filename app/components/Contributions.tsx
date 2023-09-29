@@ -1,10 +1,10 @@
 import nProgress from "nprogress";
 import { useEffect, useState } from "react";
-import { Contribution } from "../entities/GitHub";
-import { GitHub } from "../services/github";
-import ContributionCmp from "./Contribution";
-import ContributionsLoadingSkeleton from "./ContributionsLoadingSkeleton";
-import Card from "./common/Card";
+import { Contribution } from "@/app/entities/GitHub";
+import { GitHub } from "@/app/services/github";
+import ContributionCmp from "@/app/components/Contribution";
+import ContributionsLoadingSkeleton from "@/app/components/ContributionsLoadingSkeleton";
+import Card from "@/app/components/common/Card";
 
 const Contributions = (): JSX.Element => {
     const [contributions, setContributions] = useState<Contribution[]>([]);

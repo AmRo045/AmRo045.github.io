@@ -1,11 +1,11 @@
-import styles from "./ThemeSwitcher.module.css";
+import styles from "@/app/components/ThemeSwitcher.module.css";
 
-import { Theme } from "../services/themeManager";
-import { useThemeContext } from "../providers/ThemeProvider";
+import { Theme } from "@/app/services/themeManager";
+import { useThemeContext } from "@/app/providers/ThemeProvider";
 
-import DarkThemeIcon from "./svg/DarkThemeIcon";
-import LightThemeIcon from "./svg/LightThemeIcon";
-import PreferredThemeIcon from "./svg/PreferredThemeIcon";
+import DarkThemeIcon from "@/app/components/svg/DarkThemeIcon";
+import LightThemeIcon from "@/app/components/svg/LightThemeIcon";
+import PreferredThemeIcon from "@/app/components/svg/PreferredThemeIcon";
 
 const ThemeSwitcher = (): JSX.Element => {
     const { theme, setTheme, isRestored } = useThemeContext();

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Card from "./common/Card";
-import DataRow from "./common/DataRow";
+import Card from "@/app/components/common/Card";
+import DataRow from "@/app/components/common/DataRow";
 
 const Activities = (): JSX.Element => {
     return (
