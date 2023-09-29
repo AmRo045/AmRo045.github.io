@@ -5,5 +5,5 @@ export default function ActivitiesLayout({
 }: {
     children: React.ReactNode;
 }) {
-    return <div className="container flex">{children}</div>;
+    return <main className="container flex">{children}</main>;
 }

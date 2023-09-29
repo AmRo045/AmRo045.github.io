@@ -10,7 +10,7 @@ import Skills from "@/app/components/Skills";
 
 export default function HomePage() {
     return (
-        <>
+        <main className="container">
             <Profile />
             <BasicInfo />
             <ContactInfo />
@@ -18,6 +18,6 @@ export default function HomePage() {
             <Skills />
             <Activities />
             <Contributions />
-        </>
+        </main>
     );
 }

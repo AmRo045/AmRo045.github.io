@@ -31,9 +31,7 @@ export default function RootLayout({
                 />
             </head>
             <body>
-                <ThemeProvider>
-                    <div className="container">{children}</div>
-                </ThemeProvider>
+                <ThemeProvider>{children}</ThemeProvider>
             </body>
         </html>
     );
