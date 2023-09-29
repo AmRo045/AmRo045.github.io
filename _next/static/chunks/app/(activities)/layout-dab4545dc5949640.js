@@ -1,4 +1,4 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[879],{4351:function(e,r,n){Promise.resolve().then(n.bind(n,3596))},3596:function(e,r,n){"use strict";n.r(r),n.d(r,{default:function(){return o}});var t=n(7437);function o(e){let{children:r}=e;return(0,t.jsx)("div",{className:"container flex",children:r})}},622:function(e,r,n){"use strict";/**
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[879],{4351:function(e,r,n){Promise.resolve().then(n.bind(n,3596))},3596:function(e,r,n){"use strict";n.r(r),n.d(r,{default:function(){return o}});var t=n(7437);function o(e){let{children:r}=e;return(0,t.jsx)("main",{className:"container flex",children:r})}},622:function(e,r,n){"use strict";/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
