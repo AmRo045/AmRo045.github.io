@@ -6,32 +6,32 @@ const Activities = (): JSX.Element => {
     return (
         <Card type="activities" header="Activities">
             <DataRow label="Online Compiler">
-                <Link href={"/activities/online-compiler"} scroll={true}>
+                <Link href={"/online-compiler"} scroll={true}>
                     Read more
                 </Link>
             </DataRow>
             <DataRow label="Kherad-Rayhan.Com">
-                <Link href={"/activities/kherad-reyhan-com"} scroll={true}>
+                <Link href={"/kherad-reyhan-com"} scroll={true}>
                     Read more
                 </Link>
             </DataRow>
             <DataRow label="Material Hub">
-                <Link href={"/activities/material-hub"} scroll={true}>
+                <Link href={"/material-hub"} scroll={true}>
                     Read more
                 </Link>
             </DataRow>
             <DataRow label="Shecan Desktop">
-                <Link href={"/activities/shecan-desktop"} scroll={true}>
+                <Link href={"/shecan-desktop"} scroll={true}>
                     Read more
                 </Link>
             </DataRow>
             <DataRow label="Messenger">
-                <Link href={"/activities/c-sharp-messenger"} scroll={true}>
+                <Link href={"/c-sharp-messenger"} scroll={true}>
                     Read more
                 </Link>
             </DataRow>
             <DataRow label="Shop Management">
-                <Link href={"/activities/shop-management"} scroll={true}>
+                <Link href={"/shop-management"} scroll={true}>
                     Read more
                 </Link>
             </DataRow>
