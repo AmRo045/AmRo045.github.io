@@ -112,12 +112,63 @@ a:hover {
 }
 
 body {
-    min-block-size: 100vh;
+    min-block-size: 90vh;
     margin: 0;
     padding: 0;
+    position: relative;
 
     background-color: var(--surface1);
     color: var(--text);
+}
+
+video {
+    inline-size: 100%;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+img {
+    inline-size: 100%;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin-block: 1rem;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    inline-size: 100%;
+    z-index: 999;
+
+    box-shadow: var(--shadow);
+
+    padding: 0.64rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background-color: var(--surface2);
+    border-radius: 0;
+}
+
+.header__back-button {
+    color: var(--text);
+    position: relative;
+    background-color: transparent;
+    padding: 0.24rem;
+    border: 0.14rem solid var(--surface1);
+    border-radius: 9999px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-size: 0;
+}
+
+.header__back-button:hover {
+    background-color: var(--surface1);
 }
 
 .styled-link {
@@ -146,6 +197,12 @@ body {
     text-decoration-color: var(--text);
 }
 
+.activity-description {
+    backdrop-filter: contrast(0.92);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
 .container {
     max-inline-size: 960px;
     inline-size: 100%;
@@ -164,6 +221,11 @@ body {
         "skills"
         "activities"
         "contributions";
+}
+
+.container.flex {
+    display: flex;
+    flex-direction: column;
 }
 
 .profile {
@@ -294,6 +356,7 @@ body {
 
 .data-row__label {
     color: hsl(var(--text2));
+    margin-block-end: 1rem;
 }
 
 .data-row__value {
@@ -431,6 +494,11 @@ body {
     text-wrap: balance;
 }
 
+.card--activities-details a {
+    display: inline-block !important;
+    inline-size: 100%;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -438,6 +506,10 @@ body {
     }
 
     .card {
+        border-radius: 16px;
+    }
+
+    .header {
         border-radius: 16px;
     }
 }
