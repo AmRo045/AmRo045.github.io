@@ -2,7 +2,7 @@
 
 import Card from "@/app/components/common/Card";
 import DataRow from "@/app/components/common/DataRow";
-import Header from "../../components/Header";
+import Header from "@/app/components/Header";
 
 export default function KheradReyhanComPage(): JSX.Element {
     return (

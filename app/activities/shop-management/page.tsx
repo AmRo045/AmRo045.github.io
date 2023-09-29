@@ -2,9 +2,9 @@
 
 import Card from "@/app/components/common/Card";
 import DataRow from "@/app/components/common/DataRow";
-import Header from "../../components/Header";
+import Header from "@/app/components/Header";
 
-export default function MaterialHubPage(): JSX.Element {
+export default function ShopManagementPage(): JSX.Element {
     return (
         <>
             <Header title="Shop Management System (WPF)" />

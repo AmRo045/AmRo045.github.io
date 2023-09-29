@@ -4,13 +4,7 @@ import "./globals.css";
 import "nprogress/nprogress.css";
 
 import nProgress from "nprogress";
-import type { Metadata } from "next";
 import { ThemeProvider } from "./providers/ThemeProvider";
-
-const metadata: Metadata = {
-    title: "Amin Rostami",
-    description: "My personal page | AmRo | AmRo045",
-};
 
 export default function RootLayout({
     children,
@@ -24,6 +18,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
+                <title>Amin Rostami</title>
+                <meta
+                    name="description"
+                    content="My personal page | AmRo | AmRo045"
+                />
                 <link
                     rel="icon"
                     href="/favicon.svg"
