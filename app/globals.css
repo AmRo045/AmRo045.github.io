@@ -191,17 +191,6 @@ img {
     flex-direction: column;
 }
 
-@keyframes avatar-show-animation {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 .data-row {
     padding-inline: 1rem;
 }
@@ -221,42 +210,10 @@ img {
     margin: 0;
 }
 
-.profile {
-    grid-area: profile;
-}
-
-.card--basic-info {
-    grid-area: basic-info;
-}
-
-.card--contact-info {
-    grid-area: contact-info;
-}
-
-.card--links {
-    grid-area: links;
-}
-
-.card--languages {
-    grid-area: languages;
-}
-
-.card--skills {
-    grid-area: skills;
-}
-
 .card--skills .card__content {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-.card--activities {
-    grid-area: activities;
-}
-
-.card--contributions {
-    grid-area: contributions;
 }
 
 .card--contributions .card-content {
