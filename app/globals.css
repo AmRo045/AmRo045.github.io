@@ -295,57 +295,6 @@ img {
     font-size: 1.16rem;
 }
 
-.contribution {
-    display: grid;
-    gap: 1.4rem;
-
-    overflow: hidden;
-    padding: 1rem;
-
-    border-radius: 16px;
-    background-color: var(--surface1);
-    box-shadow: var(--shadow);
-}
-
-.contribution__repo--title {
-    font-weight: 600;
-    font-size: 1.24rem;
-    word-break: break-all;
-    text-wrap: balance;
-}
-
-.contribution__repo--description {
-    opacity: 0.86;
-}
-
-.contribution__repo--stats {
-    display: flex;
-    gap: 1rem;
-}
-
-.contribution__pull-request {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.24rem;
-
-    padding-inline: 1rem;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.contribution__pull-request--creation-date {
-    opacity: 0.86;
-    font-size: 0.96rem;
-    margin-inline-end: 0.24rem;
-}
-
-.contribution__pull-request--title {
-    display: inline-block;
-    font-weight: 600;
-    white-space: initial;
-    text-wrap: balance;
-}
-
 .card--activities-details a {
     display: inline-block !important;
     inline-size: 100%;

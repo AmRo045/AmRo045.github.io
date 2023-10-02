@@ -1,3 +1,5 @@
+import styles from "@/app/components/css/Contribution.module.css";
+
 import ContentLoader from "react-content-loader";
 import { randomBetween } from "@/app/utils";
 
@@ -70,7 +72,7 @@ const ContributionsLoadingSkeleton = ({ speed = 1.5 }: Props): JSX.Element => {
     };
 
     return (
-        <div className="contribution">
+        <div className={styles.contribution}>
             <ContentLoader
                 viewBox={`0 0 380 ${viewBoxHeight}`}
                 backgroundColor="var(--loading-skeleton-background)"

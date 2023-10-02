@@ -1,3 +1,5 @@
+import styles from "@/app/components/css/PullRequest.module.css";
+
 import { convertBacktickToCodeTag } from "@/app/utils";
 
 interface Props {
@@ -8,13 +10,13 @@ interface Props {
 
 const PullRequest = ({ title, url, creationDate }: Props): JSX.Element => {
     return (
-        <div className="contribution__pull-request">
-            <span className="contribution__pull-request--creation-date">
+        <div className={styles.pullRequest}>
+            <span className={styles.creationDate}>
                 {new Date(creationDate).toDateString()}
             </span>
 
             <a
-                className="contribution__pull-request--title styled-link"
+                className={styles.title}
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
