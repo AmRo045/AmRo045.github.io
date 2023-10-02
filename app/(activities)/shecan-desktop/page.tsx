@@ -11,7 +11,7 @@ export default function ShecanDesktopPage(): JSX.Element {
 
             <Header title="Shecan Desktop" />
 
-            <Card type="activities-details">
+            <Card>
                 <div className="activity-description">
                     Simple Windows application for Shecan.ir service.
                 </div>

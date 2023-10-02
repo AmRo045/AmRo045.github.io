@@ -11,7 +11,7 @@ export default function KheradReyhanComPage(): JSX.Element {
 
             <Header title="Kherad-Rayhan.Com" />
 
-            <Card type="activities-details">
+            <Card>
                 <div className="activity-description">
                     School Enrollment Website (My first web project).
                 </div>

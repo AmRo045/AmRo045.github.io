@@ -11,7 +11,7 @@ export default function CSharpMessagePage(): JSX.Element {
 
             <Header title="C# Messenger" />
 
-            <Card type="activities-details">
+            <Card>
                 <div className="activity-description">
                     Simple messenger app for tutorial purposes.
                 </div>

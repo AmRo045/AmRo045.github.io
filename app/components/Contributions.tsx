@@ -38,7 +38,7 @@ const Contributions = (): JSX.Element => {
     }, [isInViewPort]);
 
     return (
-        <Card type="contributions" header="Contributions">
+        <Card header="Contributions">
             {isLoading && (
                 <>
                     <ContributionsLoadingSkeleton speed={2} />

@@ -11,7 +11,7 @@ export default function OnlineCompilerPage(): JSX.Element {
 
             <Header title="Online Compiler" />
 
-            <Card type="activities-details">
+            <Card>
                 <div className="activity-description">
                     An online environment for writing, compiling, and executing
                     your code.

@@ -115,7 +115,7 @@ const data: Item[] = [
 
 const Skills = (): JSX.Element => {
     return (
-        <Card type="skills" header="Technical Skills">
+        <Card header="Technical Skills">
             {data.map(
                 (item: Item, index: number): ReactNode => (
                     <div className="skill-card" key={index}>

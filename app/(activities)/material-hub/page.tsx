@@ -11,7 +11,7 @@ export default function MaterialHubPage(): JSX.Element {
 
             <Header title="Material Hub" />
 
-            <Card type="activities-details">
+            <Card>
                 <div className="activity-description">
                     A material management system for ArcoGroup.org company.
                 </div>

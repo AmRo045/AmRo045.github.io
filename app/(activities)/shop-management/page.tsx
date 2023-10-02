@@ -11,7 +11,7 @@ export default function ShopManagementPage(): JSX.Element {
 
             <Header title="Shop Management System (WPF)" />
 
-            <Card type="activities-details">
+            <Card>
                 <div className="activity-description">
                     Simple shop management system.
                 </div>

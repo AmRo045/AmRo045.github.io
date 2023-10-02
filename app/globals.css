@@ -315,41 +315,6 @@ img {
     vertical-align: middle;
 }
 
-.card {
-    background-color: var(--surface2);
-    padding: 1.2rem;
-
-    inline-size: 100%;
-
-    box-shadow: var(--shadow);
-}
-.card__header {
-    font-size: 1.8rem;
-    line-height: 1;
-
-    margin-block-end: 1em;
-
-    position: relative;
-}
-.card__header::after {
-    content: "}";
-    margin-inline-start: 0.32rem;
-
-    color: hsl(var(--text2));
-}
-
-.card__header::before {
-    content: "{";
-    margin-inline-end: 0.32rem;
-
-    color: hsl(var(--text2));
-}
-.card__content {
-    display: grid;
-
-    gap: 1rem;
-}
-
 .data-row {
     padding-inline: 1rem;
 }
@@ -503,10 +468,6 @@ img {
     .container {
         max-width: 540px;
         margin-block: 1.5rem;
-    }
-
-    .card {
-        border-radius: 16px;
     }
 
     .header {

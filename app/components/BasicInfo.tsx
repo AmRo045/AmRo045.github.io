@@ -37,7 +37,7 @@ const data: Item[] = [
 
 const BasicInfo = (): JSX.Element => {
     return (
-        <Card type="basic-info" header="Basic Information">
+        <Card header="Basic Information">
             {data.map(
                 (item: Item, index: number): ReactNode => (
                     <DataRow

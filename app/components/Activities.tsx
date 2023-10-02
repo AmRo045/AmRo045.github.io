@@ -4,7 +4,7 @@ import DataRow from "@/app/components/common/DataRow";
 
 const Activities = (): JSX.Element => {
     return (
-        <Card type="activities" header="Activities" id="activities">
+        <Card header="Activities" id="activities">
             <DataRow label="Online Compiler">
                 <Link href={"/online-compiler"} scroll={true}>
                     Read more
