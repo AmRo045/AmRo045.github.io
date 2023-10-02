@@ -1,0 +1,31 @@
+.skillCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: var(--surface1);
+    flex: 1 auto;
+}
+
+.skillCard svg {
+    width: 48px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    color: var(--primary1);
+
+    padding: 0.28rem;
+    background-color: var(--surface2);
+    border-radius: 6px;
+
+    aspect-ratio: 1/1;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.24rem;
+}
+
+.level {
+    font-size: 1.16rem;
+}

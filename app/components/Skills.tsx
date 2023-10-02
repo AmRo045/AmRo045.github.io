@@ -1,6 +1,10 @@
-import { ReactNode } from "react";
 import Card from "@/app/components/common/Card";
+import { ReactNode } from "react";
 
+import SkillCard from "@/app/components/SkillCard";
+import CIcon from "@/app/components/svg/CIcon";
+import CiCdIcon from "@/app/components/svg/CiCdIcon";
+import Css3Icon from "@/app/components/svg/Css3Icon";
 import DatabaseIcon from "@/app/components/svg/DatabaseIcon";
 import DockerIcon from "@/app/components/svg/DockerIcon";
 import DotnetIcon from "@/app/components/svg/DotnetIcon";
@@ -15,9 +19,6 @@ import ReactJSIcon from "@/app/components/svg/ReactJSIcon";
 import RulerIcon from "@/app/components/svg/RulerIcon";
 import TestIcon from "@/app/components/svg/TestIcon";
 import TypeScriptIcon from "@/app/components/svg/TypeScriptIcon";
-import Css3Icon from "@/app/components/svg/Css3Icon";
-import CIcon from "@/app/components/svg/CIcon";
-import CiCdIcon from "@/app/components/svg/CiCdIcon";
 
 type Item = {
     icon: JSX.Element;
@@ -118,15 +119,12 @@ const Skills = (): JSX.Element => {
         <Card header="Technical Skills">
             {data.map(
                 (item: Item, index: number): ReactNode => (
-                    <div className="skill-card" key={index}>
-                        {item.icon}
-                        <div>
-                            <div className="skill-card__name">{item.label}</div>
-                            <div className="skill-card__level">
-                                {item.value}
-                            </div>
-                        </div>
-                    </div>
+                    <SkillCard
+                        key={index}
+                        icon={item.icon}
+                        label={item.label}
+                        level={item.value}
+                    />
                 )
             )}
         </Card>
