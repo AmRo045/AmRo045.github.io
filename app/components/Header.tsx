@@ -1,3 +1,5 @@
+import styles from "@/app/components/css/Header.module.css";
+
 import Link from "next/link";
 import BackIcon from "@/app/components/svg/BackIcon";
 import ThemeSwitcher from "@/app/components/ThemeSwitcher";
@@ -8,10 +10,10 @@ type Props = {
 
 export default function Header({ title }: Props): JSX.Element {
     return (
-        <header className="header">
+        <header className={styles.header}>
             <Link
                 href={"/"}
-                className="header__back-button"
+                className={styles.backButton}
                 title="Back to home page"
             >
                 <BackIcon width={24} />

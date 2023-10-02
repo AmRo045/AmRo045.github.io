@@ -134,43 +134,6 @@ img {
     margin-block: 1rem;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    inline-size: 100%;
-    z-index: 999;
-
-    box-shadow: var(--shadow);
-
-    padding: 0.64rem 1.2rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-
-    background-color: var(--surface2);
-    border-radius: 0;
-}
-
-.header__back-button {
-    color: var(--text);
-    position: relative;
-    background-color: transparent;
-    padding: 0.24rem;
-    border: 0.14rem solid var(--surface1);
-    border-radius: 9999px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    font-size: 0;
-}
-
-.header__back-button:hover {
-    background-color: var(--surface1);
-}
-
 .styled-link {
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -468,10 +431,6 @@ img {
     .container {
         max-width: 540px;
         margin-block: 1.5rem;
-    }
-
-    .header {
-        border-radius: 16px;
     }
 }
 
