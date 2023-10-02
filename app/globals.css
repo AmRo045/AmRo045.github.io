@@ -7,10 +7,10 @@
     --surface1: transparent;
     --text: transparent;
 
-    --theme-switcher-border: var(--surface1);
-    --theme-switcher-bg-hover: var(--surface1);
-    --theme-switcher-text: var(--text);
-    --theme-switcher-focus-shadow: var(--shadow);
+    --tool-button-border: var(--surface1);
+    --tool-button-bg-hover: var(--surface1);
+    --tool-button-text: var(--text);
+    --tool-button-focus-shadow: var(--shadow);
 }
 
 html[data-theme="light"] {
