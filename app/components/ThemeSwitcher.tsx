@@ -1,4 +1,4 @@
-import styles from "@/app/components/ThemeSwitcher.module.css";
+import styles from "@/app/components/css/ThemeSwitcher.module.css";
 
 import { Theme } from "@/app/services/themeManager";
 import { useThemeContext } from "@/app/providers/ThemeProvider";
