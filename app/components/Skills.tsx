@@ -116,17 +116,19 @@ const data: Item[] = [
 
 const Skills = (): JSX.Element => {
     return (
-        <Card header="Technical Skills">
-            {data.map(
-                (item: Item, index: number): ReactNode => (
-                    <SkillCard
-                        key={index}
-                        icon={item.icon}
-                        label={item.label}
-                        level={item.value}
-                    />
-                )
-            )}
+        <Card header="Technical Skills" className="skills">
+            <div className="skills-wrapper">
+                {data.map(
+                    (item: Item, index: number): ReactNode => (
+                        <SkillCard
+                            key={index}
+                            icon={item.icon}
+                            label={item.label}
+                            level={item.value}
+                        />
+                    )
+                )}
+            </div>
         </Card>
     );
 };

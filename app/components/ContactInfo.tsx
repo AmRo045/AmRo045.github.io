@@ -20,7 +20,7 @@ const data: Item[] = [
 
 const ContactInfo = (): JSX.Element => {
     return (
-        <Card header="Contact Information">
+        <Card header="Contact Information" className="contact-info">
             {data.map(
                 (item: Item, index: number): ReactNode => (
                     <DataRow

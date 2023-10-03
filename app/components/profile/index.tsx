@@ -46,7 +46,7 @@ const socialLinks: SocialLinkItem[] = [
 
 const Profile = (): JSX.Element => {
     return (
-        <div className={styles.profile}>
+        <div className={[styles.profile, "profile"].join(" ")}>
             <div className={styles.themeSwitch}>
                 <ThemeSwitcher />
             </div>
