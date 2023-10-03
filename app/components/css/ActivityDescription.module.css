@@ -1,0 +1,5 @@
+.activityDescription {
+    backdrop-filter: contrast(0.92);
+    border-radius: 16px;
+    padding: 1rem;
+}

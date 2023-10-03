@@ -1,5 +1,6 @@
 "use client";
 
+import ActivityDescription from "@/app/components/ActivityDescription";
 import Card from "@/app/components/common/Card";
 import DataRow from "@/app/components/common/DataRow";
 import Header from "@/app/components/Header";
@@ -12,10 +13,10 @@ export default function OnlineCompilerPage(): JSX.Element {
             <Header title="Online Compiler" />
 
             <Card>
-                <div className="activity-description">
+                <ActivityDescription>
                     An online environment for writing, compiling, and executing
                     your code.
-                </div>
+                </ActivityDescription>
 
                 <DataRow label="Related Article">
                     <a

@@ -1,5 +1,6 @@
 "use client";
 
+import ActivityDescription from "@/app/components/ActivityDescription";
 import Card from "@/app/components/common/Card";
 import DataRow from "@/app/components/common/DataRow";
 import Header from "@/app/components/Header";
@@ -12,9 +13,10 @@ export default function ShecanDesktopPage(): JSX.Element {
             <Header title="Shecan Desktop" />
 
             <Card>
-                <div className="activity-description">
+                <ActivityDescription>
                     Simple Windows application for Shecan.ir service.
-                </div>
+                </ActivityDescription>
+
                 <DataRow label="Source Code">
                     <a href="https://github.com/AmRo045/ShecanDesktop">
                         GitHub Page
