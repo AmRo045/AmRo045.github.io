@@ -1,0 +1,18 @@
+.dataRow {
+    padding-inline: 1rem;
+}
+
+.label {
+    color: hsl(var(--text2));
+    margin-block-end: 1rem;
+}
+
+.value {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-inline: 0.64rem;
+}
+
+.value p {
+    margin: 0;
+}
