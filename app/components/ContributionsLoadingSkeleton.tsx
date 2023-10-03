@@ -1,7 +1,11 @@
 import styles from "@/app/components/css/Contribution.module.css";
 
-import ContentLoader from "react-content-loader";
 import { randomBetween } from "@/app/utils";
+import dynamic from "next/dynamic";
+
+const ContentLoader = dynamic(() => import("react-content-loader"), {
+    ssr: false,
+});
 
 interface Props {
     speed?: number;
