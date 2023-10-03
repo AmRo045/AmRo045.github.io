@@ -1,5 +1,6 @@
 "use client";
 
+import ActivityDescription from "@/app/components/ActivityDescription";
 import Card from "@/app/components/common/Card";
 import DataRow from "@/app/components/common/DataRow";
 import Header from "@/app/components/Header";
@@ -11,10 +12,11 @@ export default function KheradReyhanComPage(): JSX.Element {
 
             <Header title="Kherad-Rayhan.Com" />
 
-            <Card type="activities-details">
-                <div className="activity-description">
+            <Card>
+                <ActivityDescription>
                     School Enrollment Website (My first web project).
-                </div>
+                </ActivityDescription>
+
                 <DataRow label="Laravel Version">
                     <video
                         src="https://www.dropbox.com/s/irbiv7tz6l04f1l/kherad-reyhan.test.mp4?dl=1"

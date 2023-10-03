@@ -1,3 +1,5 @@
+import styles from "@/app/components/css/DataRow.module.css";
+
 type Props = {
     label?: string;
     value?: string;
@@ -6,9 +8,9 @@ type Props = {
 
 const DataRow = ({ label, value, children }: Props): JSX.Element => {
     return (
-        <div className="data-row">
-            {label && <div className="data-row__label">{label}</div>}
-            <div className="data-row__value">{value ?? children}</div>
+        <div className={styles.dataRow}>
+            {label && <div className={styles.label}>{label}</div>}
+            <div className={styles.value}>{value ?? children}</div>
         </div>
     );
 };

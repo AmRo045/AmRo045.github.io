@@ -1,3 +1,5 @@
+import styles from "@/app/components/css/Profile.module.css";
+
 import { ReactNode } from "react";
 import ThemeSwitcher from "@/app/components/ThemeSwitcher";
 import GitHubIcon from "@/app/components/svg/GitHubIcon";
@@ -44,15 +46,15 @@ const socialLinks: SocialLinkItem[] = [
 
 const Profile = (): JSX.Element => {
     return (
-        <div className="card profile">
-            <div className="profile__theme-switch">
+        <div className={[styles.profile, "profile"].join(" ")}>
+            <div className={styles.themeSwitch}>
                 <ThemeSwitcher />
             </div>
 
             <Avatar />
             <Bio />
 
-            <div className="profile__links">
+            <div className={styles.links}>
                 {socialLinks.map(
                     (item: SocialLinkItem, index: number): ReactNode => (
                         <SocialLink

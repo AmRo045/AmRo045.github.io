@@ -1,5 +1,11 @@
-import ContentLoader from "react-content-loader";
+import styles from "@/app/components/css/Contribution.module.css";
+
 import { randomBetween } from "@/app/utils";
+import dynamic from "next/dynamic";
+
+const ContentLoader = dynamic(() => import("react-content-loader"), {
+    ssr: false,
+});
 
 interface Props {
     speed?: number;
@@ -70,7 +76,7 @@ const ContributionsLoadingSkeleton = ({ speed = 1.5 }: Props): JSX.Element => {
     };
 
     return (
-        <div className="contribution">
+        <div className={styles.contribution}>
             <ContentLoader
                 viewBox={`0 0 380 ${viewBoxHeight}`}
                 backgroundColor="var(--loading-skeleton-background)"

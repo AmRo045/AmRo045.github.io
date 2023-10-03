@@ -1,11 +1,11 @@
-import nProgress from "nprogress";
-import { useEffect, useState } from "react";
-import { Contribution } from "@/app/entities/GitHub";
-import { GitHub } from "@/app/services/github";
 import ContributionCmp from "@/app/components/Contribution";
 import ContributionsLoadingSkeleton from "@/app/components/ContributionsLoadingSkeleton";
 import Card from "@/app/components/common/Card";
+import { Contribution } from "@/app/entities/GitHub";
 import { useIsInViewPort } from "@/app/hooks/useIsInViewPort";
+import { GitHub } from "@/app/services/github";
+import nProgress from "nprogress";
+import { useEffect, useState } from "react";
 
 const Contributions = (): JSX.Element => {
     const [contributions, setContributions] = useState<Contribution[]>([]);
@@ -38,7 +38,7 @@ const Contributions = (): JSX.Element => {
     }, [isInViewPort]);
 
     return (
-        <Card type="contributions" header="Contributions">
+        <Card header="Contributions" className="contributions">
             {isLoading && (
                 <>
                     <ContributionsLoadingSkeleton speed={2} />

@@ -1,8 +1,7 @@
-import styles from "@/app/components/ThemeSwitcher.module.css";
-
-import { Theme } from "@/app/services/themeManager";
 import { useThemeContext } from "@/app/providers/ThemeProvider";
+import { Theme } from "@/app/services/themeManager";
 
+import ToolButton from "@/app/components/common/ToolButton";
 import DarkThemeIcon from "@/app/components/svg/DarkThemeIcon";
 import LightThemeIcon from "@/app/components/svg/LightThemeIcon";
 import PreferredThemeIcon from "@/app/components/svg/PreferredThemeIcon";
@@ -30,9 +29,9 @@ const ThemeSwitcher = (): JSX.Element => {
     if (!isRestored) return <></>;
 
     return (
-        <button className={styles.button} onClick={handleClick} title={theme}>
+        <ToolButton onClick={handleClick} title={theme}>
             {getIcon()}
-        </button>
+        </ToolButton>
     );
 };
 

@@ -24,7 +24,7 @@ const data: Item[] = [
 
 const Languages = (): JSX.Element => {
     return (
-        <Card type="languages" header="Languages">
+        <Card header="Languages" className="languages">
             {data.map(
                 (item: Item, index: number): ReactNode => (
                     <DataRow

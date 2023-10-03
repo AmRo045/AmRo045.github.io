@@ -1,5 +1,6 @@
 "use client";
 
+import ActivityDescription from "@/app/components/ActivityDescription";
 import Card from "@/app/components/common/Card";
 import DataRow from "@/app/components/common/DataRow";
 import Header from "@/app/components/Header";
@@ -11,10 +12,10 @@ export default function ShopManagementPage(): JSX.Element {
 
             <Header title="Shop Management System (WPF)" />
 
-            <Card type="activities-details">
-                <div className="activity-description">
+            <Card>
+                <ActivityDescription>
                     Simple shop management system.
-                </div>
+                </ActivityDescription>
 
                 <DataRow label="Gallery">
                     <img

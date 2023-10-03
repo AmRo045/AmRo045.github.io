@@ -1,5 +1,6 @@
 "use client";
 
+import ActivityDescription from "@/app/components/ActivityDescription";
 import Card from "@/app/components/common/Card";
 import DataRow from "@/app/components/common/DataRow";
 import Header from "@/app/components/Header";
@@ -11,10 +12,10 @@ export default function CSharpMessagePage(): JSX.Element {
 
             <Header title="C# Messenger" />
 
-            <Card type="activities-details">
-                <div className="activity-description">
+            <Card>
+                <ActivityDescription>
                     Simple messenger app for tutorial purposes.
-                </div>
+                </ActivityDescription>
 
                 <DataRow label="Related Article">
                     <a
