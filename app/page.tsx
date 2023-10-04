@@ -1,6 +1,7 @@
 "use client";
 
 import Activities from "@/app/components/Activities";
+import BackToTop from "@/app/components/BackToTop";
 import BasicInfo from "@/app/components/BasicInfo";
 import ContactInfo from "@/app/components/ContactInfo";
 import Contributions from "@/app/components/Contributions";
@@ -18,6 +19,7 @@ export default function HomePage() {
             <Skills />
             <Activities />
             <Contributions />
+            <BackToTop className="back-to-top" />
         </main>
     );
 }
