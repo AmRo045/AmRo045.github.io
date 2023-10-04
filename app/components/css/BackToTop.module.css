@@ -1,0 +1,23 @@
+.backToTop {
+    display: grid;
+    place-items: center;
+
+    margin-block-end: 2rem;
+}
+
+.button {
+    text-align: center;
+    cursor: pointer;
+    inline-size: 200px;
+    user-select: none;
+    font-weight: 600;
+}
+
+.button:focus-visible {
+    outline: transparent;
+}
+
+.label {
+    opacity: 0.64;
+    color: var(--text);
+}

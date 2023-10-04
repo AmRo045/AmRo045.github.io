@@ -186,6 +186,11 @@ img {
         grid-row: 6;
         grid-column: 1/4;
     }
+
+    .back-to-top {
+        grid-row: 7;
+        grid-column: 1/4;
+    }
 }
 
 @media (min-width: 992px) {
@@ -225,6 +230,11 @@ img {
 
     .contributions {
         grid-row: 6;
+        grid-column: 1/4;
+    }
+
+    .back-to-top {
+        grid-row: 7;
         grid-column: 1/4;
     }
 }
