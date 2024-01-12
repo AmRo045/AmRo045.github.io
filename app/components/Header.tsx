@@ -15,9 +15,13 @@ export default function Header({ title }: Props): JSX.Element {
                 <BackIcon width={24} />
             </ToolButtonLink>
 
-            <h3>{title}</h3>
+            <h3 className="hide-on-sm-screen">{title}</h3>
 
             <ThemeSwitcher />
+
+            <strong className="show-on-sm-screen w-100 text-center">
+                {title}
+            </strong>
         </header>
     );
 }

@@ -28,6 +28,8 @@ html[data-theme="light"] {
 
     --loading-skeleton-background: hsl(var(--brand-hue), 46%, 100%);
     --loading-skeleton-foreground: hsl(var(--brand-hue), 100%, 98%);
+
+    --activity-header-background: hsla(var(--brand-hue), 100%, 100%, 86%);
 }
 
 html[data-theme="dark"] {
@@ -45,6 +47,8 @@ html[data-theme="dark"] {
 
     --loading-skeleton-background: hsl(var(--brand-hue), 20%, 18%);
     --loading-skeleton-foreground: hsl(var(--brand-hue), 20%, 22%);
+
+    --activity-header-background: hsla(var(--brand-hue), 20%, 16%, 86%);
 }
 
 code {
@@ -138,6 +142,28 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.show-on-sm-screen {
+    display: none;
+}
+
+@media (max-width: 440px) {
+    .hide-on-sm-screen {
+        display: none;
+    }
+
+    .show-on-sm-screen {
+        display: unset;
+    }
 }
 
 @media (min-width: 576px) {
