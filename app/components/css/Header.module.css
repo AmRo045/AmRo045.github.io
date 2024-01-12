@@ -13,7 +13,8 @@
     flex-wrap: wrap;
     align-items: center;
 
-    background-color: var(--surface2);
+    background-color: var(--activity-header-background);
+    backdrop-filter: blur(16px);
     border-radius: 0;
 }
 
