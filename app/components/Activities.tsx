@@ -5,6 +5,11 @@ import DataRow from "@/app/components/common/DataRow";
 const Activities = (): JSX.Element => {
     return (
         <Card header="Activities" id="activities" className="activities">
+            <DataRow label="Outline Admin">
+                <Link href={"/outline-admin"} scroll={true}>
+                    Read more
+                </Link>
+            </DataRow>
             <DataRow label="Online Compiler">
                 <Link href={"/online-compiler"} scroll={true}>
                     Read more
