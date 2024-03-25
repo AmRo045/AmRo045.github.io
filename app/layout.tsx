@@ -19,6 +19,7 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <title>Amin Rostami</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta
                     name="description"
                     content="My personal page | AmRo | AmRo045"
