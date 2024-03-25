@@ -78,7 +78,8 @@ a {
     position: relative;
     text-decoration: none;
     color: var(--primary1);
-    white-space: nowrap;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
 }
 
 a:hover {
