@@ -33,16 +33,26 @@ export const Navbar = () => {
 
     return (
         <div className="fixed w-full z-10 top-1">
-            <div className="bg-content2 shadow-md rounded-xl p-1 flex justify-center items-center gap-6 w-fit mx-auto mt-2">
+            <div className="bg-content2 shadow-md rounded-xl p-1 flex justify-center items-center gap-6 w-fit mx-auto mt-2 ">
                 <Link href="/">
                     <Logo />
                 </Link>
 
-                <Tabs selectedKey={activeTab} aria-label="Navbar items" color="primary" size="sm" variant="light">
+                <Tabs
+                    classNames={{
+                        tabList: "gap-0.5 uppercase"
+                    }}
+                    selectedKey={activeTab}
+                    aria-label="Navbar items"
+                    color="primary"
+                    size="sm"
+                    variant="light"
+                >
                     <Tab
                         as={Link}
                         href={HOME_PATH}
                         key={TabSection.Home}
+                        className="px-2"
                         title={
                             <div className="flex space-x-1 items-center">
                                 <HomeIcon width={20} height={20} />
@@ -54,6 +64,7 @@ export const Navbar = () => {
                         as={Link}
                         href={PROJECTS_PATH}
                         key={TabSection.Projects}
+                        className="px-2"
                         title={
                             <div className="flex space-x-1 items-center">
                                 <CodeIcon width={20} height={20} />
@@ -65,6 +76,7 @@ export const Navbar = () => {
                         as={Link}
                         href={BLOG_PATH}
                         key={TabSection.Blog}
+                        className="px-2"
                         title={
                             <div className="flex space-x-1 items-center">
                                 <BlogIcon width={20} height={20} />

@@ -1,53 +1,38 @@
 "use client";
 
 import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
-import { button as buttonStyles } from "@heroui/theme";
-
-import { siteConfig } from "@/src/core/config";
-import { subtitle, title } from "@/src/components/primitives";
-import { GithubIcon } from "@/src/components/icons";
 
 export default function Home() {
     return (
-        <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-            <div className="inline-block max-w-xl text-center justify-center">
-                <span className={title()}>Make&nbsp;</span>
-                <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
-                <br />
-                <span className={title()}>websites regardless of your design experience.</span>
-                <div className={subtitle({ class: "mt-4" })}>Beautiful, fast and modern React UI library.</div>
+        <section className="grid space-y-6 max-w-[360px] mx-auto">
+            <div className="grid gap-1">
+                <span className="text-2xl text-foreground-400">[@]</span>
+                <div>
+                    <h1 className="text-xl">Amin Rostami</h1>
+                    <p className="text-foreground-500">Love to learn</p>
+                </div>
             </div>
 
-            <div className="flex gap-3">
-                <Link
-                    isExternal
-                    className={buttonStyles({
-                        color: "primary",
-                        radius: "full",
-                        variant: "shadow"
-                    })}
-                    href={siteConfig.links.docs}
-                >
-                    Documentation
-                </Link>
-                <Link
-                    isExternal
-                    className={buttonStyles({ variant: "bordered", radius: "full" })}
-                    href={siteConfig.links.github}
-                >
-                    <GithubIcon size={20} />
-                    GitHub
-                </Link>
+            <div className="grid gap-1">
+                <span className="text-2xl text-foreground-400">[Social]</span>
+                <div className="grid gap-2">
+                    <Link href="https://github.com/AmRo045">GitHub</Link>
+                    <Link href="https://leetcode.com/AmRo045">LeetCode</Link>
+                    <Link href="https://stackoverflow.com/users/11219312/amro">StackOverFlow</Link>
+                    <Link href="https://instagram.com/AmRo045">Instagram</Link>
+                    <Link href="https://t.me/AmRo045">Telegram</Link>
+                    <Link href="https://www.linkedin.com/in/amin-rostami-50a606133">LinkedIn</Link>
+                    <Link href="https://x.com/AmRo045">X/Twitter</Link>
+                </div>
             </div>
 
-            <div className="mt-8">
-                <Snippet hideCopyButton hideSymbol variant="bordered">
-                    <span>
-                        Get started by editing <Code color="primary">app/page.tsx</Code>
-                    </span>
-                </Snippet>
+            <div className="grid gap-1">
+                <span className="text-2xl text-foreground-400">[Languages]</span>
+                <div className="grid gap-2">
+                    <span>Turkish/Azari/Ardabil</span>
+                    <span>Persian/Iran</span>
+                    <span>English/US</span>
+                </div>
             </div>
         </section>
     );
