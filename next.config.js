@@ -2,7 +2,15 @@
 const nextConfig = {
     output: "export",
 
-    images: { unoptimized: true },
+    images: {
+        unoptimized: true,
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "github.com"
+            }
+        ]
+    }
 };
 
 module.exports = nextConfig;
