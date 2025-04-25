@@ -3,7 +3,7 @@ import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
 
-import { siteConfig } from "@/src/config/site";
+import { siteConfig } from "@/src/core/config";
 import { title, subtitle } from "@/src/components/primitives";
 import { GithubIcon } from "@/src/components/icons";
 
