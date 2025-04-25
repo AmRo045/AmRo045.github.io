@@ -4,7 +4,7 @@ import { Link } from "@heroui/link";
 
 export default function Home() {
     return (
-        <section className="grid space-y-6 max-w-[340px] mx-auto">
+        <section className="grid space-y-8">
             <div className="grid gap-1">
                 <span className="text-2xl text-foreground-400">[@]</span>
                 <div>
@@ -15,7 +15,7 @@ export default function Home() {
 
             <div className="grid gap-1">
                 <span className="text-2xl text-foreground-400">[Social]</span>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 font-bold">
                     <Link href="https://github.com/AmRo045" className="w-fit">
                         GitHub
                     </Link>
