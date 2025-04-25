@@ -33,10 +33,12 @@ export const Navbar = () => {
 
     return (
         <div className="fixed w-full z-10 top-1">
-            <div className="bg-content2 shadow-md rounded-xl p-1 flex justify-center items-center gap-6 w-fit mx-auto mt-2 ">
-                <Link href="/">
-                    <Logo />
-                </Link>
+            <div className="bg-content2 shadow-md rounded-xl p-1 flex justify-center items-center gap-4 w-fit mx-auto mt-2 ">
+                <div className="flex items-center ms-2">
+                    <Link href="/">
+                        <Logo width={28} height={28} />
+                    </Link>
+                </div>
 
                 <Tabs
                     classNames={{
@@ -44,9 +46,8 @@ export const Navbar = () => {
                     }}
                     selectedKey={activeTab}
                     aria-label="Navbar items"
-                    color="primary"
                     size="sm"
-                    variant="light"
+                    variant="underlined"
                 >
                     <Tab
                         as={Link}
