@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html suppressHydrationWarning lang="en">
             <head>
-                <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+                <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
             </head>
 
             <body className="min-h-screen bg-background font-monospace antialiased">

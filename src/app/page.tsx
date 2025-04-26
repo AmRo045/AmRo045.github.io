@@ -16,25 +16,25 @@ export default function Home() {
             <div className="grid gap-1">
                 <span className="text-2xl text-foreground-400">[Social]</span>
                 <div className="flex flex-col gap-2 font-bold">
-                    <Link href="https://github.com/AmRo045" className="w-fit">
+                    <Link className="w-fit" href="https://github.com/AmRo045">
                         GitHub
                     </Link>
-                    <Link href="https://leetcode.com/AmRo045" className="w-fit">
+                    <Link className="w-fit" href="https://leetcode.com/AmRo045">
                         LeetCode
                     </Link>
-                    <Link href="https://stackoverflow.com/users/11219312/amro" className="w-fit">
+                    <Link className="w-fit" href="https://stackoverflow.com/users/11219312/amro">
                         StackOverFlow
                     </Link>
-                    <Link href="https://instagram.com/AmRo045" className="w-fit">
+                    <Link className="w-fit" href="https://instagram.com/AmRo045">
                         Instagram
                     </Link>
-                    <Link href="https://t.me/AmRo045" className="w-fit">
+                    <Link className="w-fit" href="https://t.me/AmRo045">
                         Telegram
                     </Link>
-                    <Link href="https://www.linkedin.com/in/amin-rostami-50a606133" className="w-fit">
+                    <Link className="w-fit" href="https://www.linkedin.com/in/amin-rostami-50a606133">
                         LinkedIn
                     </Link>
-                    <Link href="https://x.com/AmRo045" className="w-fit">
+                    <Link className="w-fit" href="https://x.com/AmRo045">
                         X/Twitter
                     </Link>
                 </div>

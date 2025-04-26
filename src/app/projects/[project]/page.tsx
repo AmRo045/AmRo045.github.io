@@ -1,4 +1,3 @@
-import { projects } from "@/src/core/data";
 import { Button } from "@heroui/button";
 import { ArrowLeftIcon } from "@heroui/shared-icons";
 import { notFound } from "next/navigation";
@@ -6,6 +5,8 @@ import { Link } from "@heroui/link";
 import { Chip } from "@heroui/chip";
 import Image from "next/image";
 import { Metadata } from "next";
+
+import { projects } from "@/src/core/data";
 
 interface Props {
     params: Promise<{ project: string }>;
@@ -62,7 +63,7 @@ export default async function ProjectDetailsPage({ params }: Props) {
     return (
         <section className="grid gap-4">
             <div className="flex gap-1 items-center">
-                <Button as={Link} href="/projects" isIconOnly={true} variant="light" size="sm" radius="full">
+                <Button as={Link} href="/projects" isIconOnly={true} radius="full" size="sm" variant="light">
                     <ArrowLeftIcon />
                 </Button>
 
@@ -72,9 +73,9 @@ export default async function ProjectDetailsPage({ params }: Props) {
             <Image
                 alt={data.name}
                 className="object-cover w-full max-h-[240px] rounded-xl border-2 border-default-50"
-                unoptimized={true}
                 height={200}
                 src={data.images[data.featuredImageIndex]}
+                unoptimized={true}
                 width={200}
             />
 
@@ -83,7 +84,7 @@ export default async function ProjectDetailsPage({ params }: Props) {
             {data.links && (
                 <div className="flex flex-wrap gap-2 items-center justify-start">
                     {data.links.map((link) => (
-                        <Chip size="sm" variant="shadow" color="primary" as={Link} href={link.url} key={link.url}>
+                        <Chip key={link.url} as={Link} color="primary" href={link.url} size="sm" variant="shadow">
                             {link.title}
                         </Chip>
                     ))}
@@ -93,7 +94,7 @@ export default async function ProjectDetailsPage({ params }: Props) {
             {data.tags && (
                 <div className="flex flex-wrap gap-2 items-center justify-start">
                     {data.tags.map((tag) => (
-                        <Chip size="sm" variant="flat" key={tag}>
+                        <Chip key={tag} size="sm" variant="flat">
                             {tag}
                         </Chip>
                     ))}
@@ -103,12 +104,13 @@ export default async function ProjectDetailsPage({ params }: Props) {
             {data.videos && (
                 <div className="flex flex-wrap gap-2 items-center justify-start">
                     {data.videos.map((video) => (
+                        // eslint-disable-next-line jsx-a11y/media-has-caption
                         <video
                             key={video}
-                            src={video}
-                            poster={data.images[data.featuredImageIndex]}
-                            controls={true}
                             className="object-cover w-full max-h-[240px] rounded-xl border-2 border-default-100"
+                            controls={true}
+                            poster={data.images[data.featuredImageIndex]}
+                            src={video}
                         />
                     ))}
                 </div>
@@ -123,9 +125,9 @@ export default async function ProjectDetailsPage({ params }: Props) {
                                 key={index}
                                 alt={`${data.name} image no${index}`}
                                 className="object-cover w-full max-h-[240px] rounded-xl border-2 border-default-100"
-                                unoptimized={true}
                                 height={200}
                                 src={image}
+                                unoptimized={true}
                                 width={200}
                             />
                         ))}
