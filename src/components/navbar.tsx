@@ -48,6 +48,7 @@ export const Navbar = () => {
                     aria-label="Navbar items"
                     size="sm"
                     variant="underlined"
+                    color="primary"
                 >
                     <Tab
                         as={Link}
