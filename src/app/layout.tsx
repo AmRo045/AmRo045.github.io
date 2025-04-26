@@ -11,10 +11,7 @@ export const metadata: Metadata = {
         default: siteConfig.name,
         template: `%s - ${siteConfig.name}`
     },
-    description: siteConfig.description,
-    icons: {
-        icon: "/favicon.ico"
-    }
+    description: siteConfig.description
 };
 
 export const viewport: Viewport = {
@@ -27,7 +24,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html suppressHydrationWarning lang="en">
-            <head />
+            <head>
+                <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+            </head>
+
             <body className="min-h-screen bg-background font-monospace antialiased">
                 <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
                     <div className="relative flex flex-col h-screen">
