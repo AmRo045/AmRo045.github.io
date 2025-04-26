@@ -32,7 +32,7 @@ export const Navbar = () => {
     }, [pathname]);
 
     return (
-        <div className="fixed w-full z-10 top-0 backdrop-blur bg-opacity-0">
+        <div className="fixed w-full z-20 top-0 backdrop-blur bg-opacity-0">
             <div className="bg-content2 bg-opacity-20 backdrop-blur shadow-md rounded-xl p-1 flex justify-center items-center gap-4 w-fit mx-auto mt-2">
                 <div className="flex items-center ms-2">
                     <Link href="/">
