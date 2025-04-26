@@ -7,6 +7,7 @@ import { siteConfig } from "@/src/core/config";
 import { Navbar } from "@/src/components/navbar";
 
 export const metadata: Metadata = {
+    metadataBase: new URL(siteConfig.homepage),
     title: {
         default: siteConfig.name,
         template: `%s - ${siteConfig.name}`

@@ -7,7 +7,6 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 import { projects } from "@/src/core/data";
-import { siteConfig } from "@/src/core/config";
 
 interface Props {
     params: Promise<{ project: string }>;
@@ -30,7 +29,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        metadataBase: new URL(siteConfig.homepage),
         title: `${data.name} - Project Details`,
         description: data.description,
         openGraph: {
