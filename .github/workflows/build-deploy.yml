@@ -1,0 +1,77 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - .vscode
+      - .eslintignore
+      - .eslintrc.json
+      - .gitignore
+      - .prettierrc
+      - README.md
+      - LICENSE
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore:
+      - .vscode
+      - .eslintignore
+      - .eslintrc.json
+      - .gitignore
+      - .prettierrc
+      - README.md
+      - LICENSE
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+
+      - name: ✨ Prepare
+        run: npm ci
+
+      - name: 🔨 Build
+        run: npm run build
+        env:
+          CI: false
+
+      - name: ⏫ Upload production files
+        if: ${{ github.event_name == 'push' }}
+
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged) }}
+
+    steps:
+      - name: ⏬ Download production files
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+
+      - name: 🚚 Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
