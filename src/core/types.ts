@@ -12,7 +12,7 @@ export type Project = {
         title: string;
         url: string;
     }[];
-    gallery: string[];
+    images: string[];
     videos?: string[];
     featuredImageIndex: number;
     tags?: string[];

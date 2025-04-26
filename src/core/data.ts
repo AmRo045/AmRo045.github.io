@@ -11,9 +11,13 @@ export const projects: Project[] = [
             {
                 title: "GitHub Page",
                 url: "https://github.com/AmRo045/OutlineAdmin"
+            },
+            {
+                title: "Outline VPN",
+                url: "https://github.com/Jigsaw-Code/outline-apps"
             }
         ],
-        gallery: [
+        images: [
             "/images/outline-admin/1-login.png",
             "/images/outline-admin/2-servers.png",
             "/images/outline-admin/3-new-server.png",
@@ -37,9 +41,13 @@ export const projects: Project[] = [
             {
                 title: "GitHub Page",
                 url: "https://github.com/AmRo045/OutlineAdminLaravel"
+            },
+            {
+                title: "Outline VPN",
+                url: "https://github.com/Jigsaw-Code/outline-apps"
             }
         ],
-        gallery: [
+        images: [
             "/images/outline-admin-laravel/login.png",
             "/images/outline-admin-laravel/servers.png",
             "/images/outline-admin-laravel/new-server.png",
@@ -61,7 +69,7 @@ export const projects: Project[] = [
                 url: "https://virgool.io/@sourcesara.info/%D9%85%D8%AD%DB%8C%D8%B7-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-elyhzysgy3dt"
             }
         ],
-        gallery: [
+        images: [
             "/images/online-compiler/1.png",
             "/images/online-compiler/2.png",
             "/images/online-compiler/3.png",
@@ -84,7 +92,7 @@ export const projects: Project[] = [
                 url: "https://kherad-rayhan.Com"
             }
         ],
-        gallery: ["images/kherad-rayhan-com/0.png"],
+        images: ["/images/kherad-rayhan-com/0.png"],
         videos: ["https://www.dropbox.com/s/irbiv7tz6l04f1l/kherad-reyhan.test.mp4?dl=1"],
         featuredImageIndex: 0,
         tags: ["website", "school-management-system", "enrollment-management-system"]
@@ -93,7 +101,7 @@ export const projects: Project[] = [
         id: "shop-management",
         name: "Shop Management System (WPF)",
         description: "Simple shop management system.",
-        gallery: [
+        images: [
             "/images/shop-management/1.png",
             "/images/shop-management/2.png",
             "/images/shop-management/3.png",
@@ -114,7 +122,7 @@ export const projects: Project[] = [
                 url: "https://sourcesara.com/c-sharp-messenger-application/"
             }
         ],
-        gallery: [
+        images: [
             "/images/c-sharp-messenger/1.jpg",
             "/images/c-sharp-messenger/2.jpg",
             "/images/c-sharp-messenger/3.jpg",
@@ -130,7 +138,7 @@ export const projects: Project[] = [
         id: "material-hub",
         name: "Material Hub",
         description: "A material management system for ArcoGroup.org company.",
-        gallery: ["images/material-hub/0.png"],
+        images: ["/images/material-hub/0.png"],
         videos: ["https://www.dropbox.com/s/zhrvf3qdyt5813f/MaterialHub.mp4?dl=1"],
         featuredImageIndex: 0,
         tags: ["desktop-app", "windows", "assets-management-system"]
@@ -145,7 +153,7 @@ export const projects: Project[] = [
                 url: "https://github.com/AmRo045/ShecanDesktop"
             }
         ],
-        gallery: ["/images/shecan-desktop/1.png"],
+        images: ["/images/shecan-desktop/1.png"],
         featuredImageIndex: 0,
         tags: ["desktop-app", "windows", "dns-configuration-tool"]
     }
