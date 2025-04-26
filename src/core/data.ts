@@ -14,15 +14,15 @@ export const projects: Project[] = [
             }
         ],
         gallery: [
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/1-login.png?raw=true",
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/2-servers.png?raw=true",
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/3-new-server.png?raw=true",
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/4-server-settings.png?raw=true",
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/5-server-access-keys.png?raw=true",
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/6-dynamic-access-keys.png?raw=true",
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/7-dynamic-access-key-edit.png?raw=true",
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/8-dynamic-access-key-details.png?raw=true",
-            "https://github.com/AmRo045/OutlineAdmin/blob/main/.github/screenshots/9-dynamic-access-key-access-keys.png?raw=true"
+            "/images/outline-admin/1-login.png",
+            "/images/outline-admin/2-servers.png",
+            "/images/outline-admin/3-new-server.png",
+            "/images/outline-admin/4-server-settings.png",
+            "/images/outline-admin/5-server-access-keys.png",
+            "/images/outline-admin/6-dynamic-access-keys.png",
+            "/images/outline-admin/7-dynamic-access-key-edit.png",
+            "/images/outline-admin/8-dynamic-access-key-details.png",
+            "/images/outline-admin/9-dynamic-access-key-access-keys.png"
         ],
         featuredImageIndex: 6,
         tags: ["admin-panel", "outline-vpn", "shadowsocks", "server-manager"]
@@ -40,13 +40,13 @@ export const projects: Project[] = [
             }
         ],
         gallery: [
-            "https://github.com/AmRo045/OutlineAdminLaravel/raw/main/extra/screenshots/login.png",
-            "https://github.com/AmRo045/OutlineAdminLaravel/raw/main/extra/screenshots/servers.png",
-            "https://github.com/AmRo045/OutlineAdminLaravel/raw/main/extra/screenshots/new-server.png",
-            "https://github.com/AmRo045/OutlineAdminLaravel/raw/main/extra/screenshots/server-settings.png",
-            "https://github.com/AmRo045/OutlineAdminLaravel/raw/main/extra/screenshots/access-keys.png",
-            "https://github.com/AmRo045/OutlineAdminLaravel/raw/main/extra/screenshots/qr-code.png",
-            "https://github.com/AmRo045/OutlineAdminLaravel/raw/main/extra/screenshots/new-access-key.png"
+            "/images/outline-admin-laravel/login.png",
+            "/images/outline-admin-laravel/servers.png",
+            "/images/outline-admin-laravel/new-server.png",
+            "/images/outline-admin-laravel/server-settings.png",
+            "/images/outline-admin-laravel/access-keys.png",
+            "/images/outline-admin-laravel/qr-code.png",
+            "/images/outline-admin-laravel/new-access-key.png"
         ],
         featuredImageIndex: 4,
         tags: ["admin-panel", "outline-vpn", "shadowsocks", "server-manager"]
@@ -62,14 +62,14 @@ export const projects: Project[] = [
             }
         ],
         gallery: [
-            "https://amro045.github.io/images/online-compiler/1.png",
-            "https://amro045.github.io/images/online-compiler/2.png",
-            "https://amro045.github.io/images/online-compiler/3.png",
-            "https://amro045.github.io/images/online-compiler/4.png",
-            "https://amro045.github.io/images/online-compiler/5.png",
-            "https://amro045.github.io/images/online-compiler/6.png",
-            "https://amro045.github.io/images/online-compiler/7.png",
-            "https://amro045.github.io/images/online-compiler/8.png"
+            "/images/online-compiler/1.png",
+            "/images/online-compiler/2.png",
+            "/images/online-compiler/3.png",
+            "/images/online-compiler/4.png",
+            "/images/online-compiler/5.png",
+            "/images/online-compiler/6.png",
+            "/images/online-compiler/7.png",
+            "/images/online-compiler/8.png"
         ],
         featuredImageIndex: 0,
         tags: ["compiler", "code-editor", "code-runner"]
@@ -94,14 +94,13 @@ export const projects: Project[] = [
         name: "Shop Management System (WPF)",
         description: "Simple shop management system.",
         gallery: [
-            "https://amro045.github.io/images/shop-management/1.png",
-            "https://amro045.github.io/images/shop-management/2.png",
-            "https://amro045.github.io/images/shop-management/3.png",
-            "https://amro045.github.io/images/shop-management/3.png",
-            "https://amro045.github.io/images/shop-management/4.png",
-            "https://amro045.github.io/images/shop-management/5.png"
+            "/images/shop-management/1.png",
+            "/images/shop-management/2.png",
+            "/images/shop-management/3.png",
+            "/images/shop-management/3.png",
+            "/images/shop-management/4.png",
+            "/images/shop-management/5.png"
         ],
-        videos: ["https://www.dropbox.com/s/zhrvf3qdyt5813f/MaterialHub.mp4?dl=1"],
         featuredImageIndex: 0,
         tags: ["desktop-app", "windows", "assets-management-system"]
     },
@@ -116,12 +115,12 @@ export const projects: Project[] = [
             }
         ],
         gallery: [
-            "https://amro045.github.io/images/c-sharp-messenger/1.jpg",
-            "https://amro045.github.io/images/c-sharp-messenger/2.jpg",
-            "https://amro045.github.io/images/c-sharp-messenger/3.jpg",
-            "https://amro045.github.io/images/c-sharp-messenger/4.jpg",
-            "https://amro045.github.io/images/c-sharp-messenger/5.jpg",
-            "https://amro045.github.io/images/c-sharp-messenger/6.jpg"
+            "/images/c-sharp-messenger/1.jpg",
+            "/images/c-sharp-messenger/2.jpg",
+            "/images/c-sharp-messenger/3.jpg",
+            "/images/c-sharp-messenger/4.jpg",
+            "/images/c-sharp-messenger/5.jpg",
+            "/images/c-sharp-messenger/6.jpg"
         ],
         videos: ["https://serverfiles.ir/dl/sourcesara/video/post/7439.mp4"],
         featuredImageIndex: 1,
@@ -146,7 +145,7 @@ export const projects: Project[] = [
                 url: "https://github.com/AmRo045/ShecanDesktop"
             }
         ],
-        gallery: ["https://amro045.github.io/images/shecan-desktop/1.png"],
+        gallery: ["/images/shecan-desktop/1.png"],
         featuredImageIndex: 0,
         tags: ["desktop-app", "windows", "dns-configuration-tool"]
     }
