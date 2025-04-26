@@ -1,15 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
+    distDir: "build",
 
     images: {
-        unoptimized: true,
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "github.com"
-            }
-        ]
+        unoptimized: true
     },
     experimental: {
         scrollRestoration: true
