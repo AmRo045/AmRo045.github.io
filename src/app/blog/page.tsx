@@ -1,9 +1,9 @@
-import { title } from "@/src/components/primitives";
+"use client";
 
 export default function BlogPage() {
     return (
-        <div>
-            <h1 className={title()}>Blog</h1>
+        <div className="text-center">
+            <h1>NOT IMPLEMENTED YET</h1>
         </div>
     );
 }
