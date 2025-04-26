@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
                     <div className="relative flex flex-col h-screen">
                         <Navbar />
-                        <main className="w-[340px] mx-auto mt-8 py-16 px-2">{children}</main>
+                        <main className="w-[340px] mx-auto mt-8 py-12 px-2">{children}</main>
                     </div>
                 </Providers>
             </body>

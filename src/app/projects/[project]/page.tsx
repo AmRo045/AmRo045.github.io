@@ -75,7 +75,7 @@ export default async function ProjectDetailsPage({ params }: Props) {
                             src={video}
                             poster={data.images[data.featuredImageIndex]}
                             controls={true}
-                            className="object-cover w-full max-h-[240px] rounded-xl border-2 border-default-50"
+                            className="object-cover w-full max-h-[240px] rounded-xl border-2 border-default-100"
                         />
                     ))}
                 </div>
@@ -89,7 +89,7 @@ export default async function ProjectDetailsPage({ params }: Props) {
                             <Image
                                 key={index}
                                 alt={`${data.name} image no${index}`}
-                                className="object-cover w-full max-h-[240px] rounded-xl border-2 border-default-50"
+                                className="object-cover w-full max-h-[240px] rounded-xl border-2 border-default-100"
                                 unoptimized={true}
                                 height={200}
                                 src={image}
