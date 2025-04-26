@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[831],{2884:(e,s,r)=>{Promise.resolve().then(r.bind(r,4269))},4269:(e,s,r)=>{"use strict";r.r(s),r.d(s,{default:()=>t});var n=r(5155);function t(){return(0,n.jsx)("div",{className:"text-center",children:(0,n.jsx)("h1",{children:"NOT IMPLEMENTED YET"})})}}},e=>{var s=s=>e(e.s=s);e.O(0,[441,684,358],()=>s(2884)),_N_E=e.O()}]);
