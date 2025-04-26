@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Link } from "@heroui/link";
 import { Chip } from "@heroui/chip";
 import Image from "next/image";
+import { Metadata } from "next";
 
 interface Props {
     params: Promise<{ project: string }>;
@@ -16,6 +17,38 @@ export async function generateStaticParams() {
             project: p.id
         };
     });
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { project } = await params;
+    const data = projects.find((p) => p.id === project);
+
+    if (!data) {
+        return {};
+    }
+
+    return {
+        title: `${data.name} - Project Details`,
+        description: data.description,
+        openGraph: {
+            title: `${data.name} - Project Details`,
+            description: data.description,
+            images: [
+                {
+                    url: data.images[data.featuredImageIndex],
+                    width: 800,
+                    height: 600,
+                    alt: data.name
+                }
+            ]
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${data.name} - Project Details`,
+            description: data.description,
+            images: [data.images[data.featuredImageIndex]]
+        }
+    };
 }
 
 export default async function ProjectDetailsPage({ params }: Props) {
