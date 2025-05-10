@@ -17,3 +17,10 @@ export type Project = {
     featuredImageIndex: number;
     tags?: string[];
 };
+
+export interface BlogPost {
+    id: string;
+    title: string;
+    contentHtml: string;
+    date: string;
+}
