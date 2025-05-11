@@ -1,8 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardFooter } from "@heroui/card";
+import { Metadata } from "next";
 
 import { PostsService } from "@/src/core/posts-service";
+import { siteConfig } from "@/src/core/config";
+
+export const metadata: Metadata = {
+    title: "Blog",
+    description: `Read the latest posts from ${siteConfig.name}`,
+    openGraph: {
+        title: "Blog",
+        description: `Read the latest posts from ${siteConfig.name}`,
+        url: `${siteConfig.homepage}/blog`,
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Blog",
+        description: `Read the latest posts from ${siteConfig.name}`
+    }
+};
 
 const posts = PostsService.getAll();
 

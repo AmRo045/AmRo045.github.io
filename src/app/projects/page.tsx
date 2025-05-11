@@ -1,11 +1,27 @@
-"use client";
-
 import { Card, CardFooter, CardHeader } from "@heroui/card";
 import Image from "next/image";
 import { Chip } from "@heroui/chip";
 import { Link } from "@heroui/link";
+import { Metadata } from "next";
 
 import { projects } from "@/src/core/data";
+import { siteConfig } from "@/src/core/config";
+
+export const metadata: Metadata = {
+    title: "Projects",
+    description: `Explore side projects and experiments by ${siteConfig.name}`,
+    openGraph: {
+        title: "Projects",
+        description: `Explore side projects and experiments by ${siteConfig.name}`,
+        url: `${siteConfig.homepage}/projects`,
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Projects",
+        description: `Explore side projects and experiments by ${siteConfig.name}`
+    }
+};
 
 export default function ProjectsPage() {
     return (

@@ -29,10 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${data.name} - Project Details`,
+        title: data.name,
         description: data.description,
         openGraph: {
-            title: `${data.name} - Project Details`,
+            title: data.name,
             description: data.description,
             images: [
                 {
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
         twitter: {
             card: "summary_large_image",
-            title: `${data.name} - Project Details`,
+            title: data.name,
             description: data.description,
             images: [data.images[data.featuredImageIndex]]
         }
