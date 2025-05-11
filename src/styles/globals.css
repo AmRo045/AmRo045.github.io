@@ -8,7 +8,7 @@
 }
 
 .markdown {
-    @apply text-foreground-500 leading-normal break-words;
+    @apply text-foreground-500 leading-loose break-words;
 
     & > * + * {
         @apply mt-0 mb-4;
@@ -80,10 +80,18 @@
 
     ul {
         @apply text-base pl-8 list-disc;
+
+        li {
+            @apply leading-loose;
+        }
     }
 
     ol {
         @apply text-base pl-8 list-decimal;
+
+        li {
+            @apply leading-loose;
+        }
     }
 
     kbd {

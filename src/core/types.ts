@@ -18,9 +18,22 @@ export type Project = {
     tags?: string[];
 };
 
-export interface BlogPost {
-    id: string;
+export interface BlogPostMetaData {
     title: string;
+    date: string;
+    image: string;
+    metaDescription?: string;
+
+    [key: string]: any;
+}
+
+export interface BlogPost extends BlogPostMetaData {
     contentHtml: string;
+}
+
+export interface PostSummary {
+    title: string;
+    slug: string;
+    image: string;
     date: string;
 }
