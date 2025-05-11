@@ -22,8 +22,9 @@ export async function generateStaticParams() {
     });
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const post = await PostsService.getBySlug(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const resolvedParams = await params;
+    const post = await PostsService.getBySlug(resolvedParams.slug);
 
     return {
         title: post.title,
@@ -31,7 +32,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
         openGraph: {
             title: post.title,
             description: post.metaDescription || post.title,
-            url: `${siteConfig.homepage}/blog/${params.slug}`,
+            url: `${siteConfig.homepage}/blog/${resolvedParams.slug}`,
             type: "article",
             images: [
                 {
