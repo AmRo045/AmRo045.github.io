@@ -25,6 +25,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const resolvedParams = await params;
     const post = await PostsService.getBySlug(resolvedParams.slug);
+    const imageFullUrl = siteConfig.homepage + post.image;
 
     return {
         title: post.title,
@@ -36,7 +37,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             type: "article",
             images: [
                 {
-                    url: post.image,
+                    url: imageFullUrl,
+                    width: 800,
+                    height: 600,
                     alt: post.title
                 }
             ]
@@ -45,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             card: "summary_large_image",
             title: post.title,
             description: post.metaDescription || post.title,
-            images: [post.image]
+            images: [imageFullUrl]
         }
     };
 }
