@@ -71,11 +71,11 @@
     }
 
     code {
-        @apply font-mono text-sm inline bg-content2 rounded px-1 py-05 max-w-[340px] !overflow-auto;
+        @apply font-mono text-sm inline bg-content2 rounded px-1 py-05 max-w-[310px] !overflow-auto;
     }
 
     pre {
-        @apply bg-content2 rounded p-4;
+        @apply bg-content2 rounded p-2;
     }
 
     pre code {
