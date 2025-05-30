@@ -66,7 +66,6 @@ export default function Contributions() {
                                             color="primary"
                                             size="sm"
                                             startContent={<StarIcon height={16} width={16} />}
-                                            variant="shadow"
                                         >
                                             {abbreviateNumber(contribution.repo.stargazers_count)}
                                         </Chip>
@@ -75,7 +74,6 @@ export default function Contributions() {
                                             color="primary"
                                             size="sm"
                                             startContent={<ForkIcon height={16} width={16} />}
-                                            variant="shadow"
                                         >
                                             {abbreviateNumber(contribution.repo.forks_count)}
                                         </Chip>
