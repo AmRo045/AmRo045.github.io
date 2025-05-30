@@ -1,4 +1,4 @@
-import { heroui } from "@heroui/theme";
+import {heroui} from "@heroui/theme";
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -7,18 +7,18 @@ const config = {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: "#627369",
-                    50: "#EEF1EF",
-                    100: "#DEE3E0",
-                    200: "#C0C9C4",
-                    300: "#9FADA5",
-                    400: "#7E9186",
-                    500: "#627369",
-                    600: "#4D5B53",
-                    700: "#3B453F",
-                    800: "#282F2B",
-                    900: "#131614",
-                    950: "#090B0A"
+                    DEFAULT: "#517179",
+                    50: "#F3F6F7",
+                    100: "#E7EDEF",
+                    200: "#C8D7DA",
+                    300: "#A6BEC4",
+                    400: "#7C9EA7",
+                    500: "#517179",
+                    600: "#4A676E",
+                    700: "#3F585F",
+                    800: "#354A4F",
+                    900: "#253337",
+                    950: "#121A1B"
                 }
             },
 
