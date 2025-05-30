@@ -2,6 +2,8 @@
 
 import { Link } from "@heroui/link";
 
+import Contributions from "@/src/components/contributions";
+
 export default function Home() {
     return (
         <section className="grid space-y-8">
@@ -47,6 +49,11 @@ export default function Home() {
                     <span>Persian/Iran</span>
                     <span>English/US</span>
                 </div>
+            </div>
+
+            <div className="grid gap-1">
+                <span className="text-2xl text-foreground-400">[Contributions]</span>
+                <Contributions />
             </div>
         </section>
     );

@@ -7,6 +7,10 @@
     padding-bottom: 0.125rem;
 }
 
+code {
+    @apply bg-content2 text-foreground-500 p-1 rounded-xl
+}
+
 .markdown {
     @apply text-foreground-500 leading-loose break-words;
 

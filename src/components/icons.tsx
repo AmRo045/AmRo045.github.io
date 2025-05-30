@@ -163,3 +163,44 @@ export const SearchIcon = (props: IconSvgProps) => (
         <path d="M22 22L20 20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
     </svg>
 );
+
+export function StarIcon(props: SVGProps<SVGSVGElement>) {
+    return (
+        <svg height="1em" viewBox="0 0 24 24" width="1em" {...props}>
+            <path
+                d="M10.704 4.325a1.5 1.5 0 0 1 2.592 0l1.818 3.12a1.5 1.5 0 0 0 .978.712l3.53.764a1.5 1.5 0 0 1 .8 2.465l-2.405 2.693a1.5 1.5 0 0 0-.374 1.15l.363 3.593a1.5 1.5 0 0 1-2.097 1.524l-3.304-1.456a1.5 1.5 0 0 0-1.21 0l-3.304 1.456a1.5 1.5 0 0 1-2.097-1.524l.363-3.593a1.5 1.5 0 0 0-.373-1.15l-2.406-2.693a1.5 1.5 0 0 1 .8-2.465l3.53-.764a1.5 1.5 0 0 0 .979-.711z"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+            />
+        </svg>
+    );
+}
+
+export function ForkIcon(props: SVGProps<SVGSVGElement>) {
+    return (
+        <svg height="1em" viewBox="0 0 24 24" width="1em" {...props}>
+            <path
+                d="M6.5 8.25a2.75 2.75 0 1 0 0-5.5a2.75 2.75 0 0 0 0 5.5m0 0V10a2 2 0 0 0 2 2h3m6-3.75a2.75 2.75 0 1 0 0-5.5a2.75 2.75 0 0 0 0 5.5m0 0V10a2 2 0 0 1-2 2h-4m0 0v3.75m0 0a2.75 2.75 0 1 0 0 5.5a2.75 2.75 0 0 0 0-5.5"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+            />
+        </svg>
+    );
+}
+
+export function PullRequestIcon(props: SVGProps<SVGSVGElement>) {
+    return (
+        <svg height="1em" viewBox="0 0 24 24" width="1em" {...props}>
+            <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
+                <path d="M8.25 5.5a2.75 2.75 0 1 1-5.5 0a2.75 2.75 0 0 1 5.5 0m13 13a2.75 2.75 0 1 1-5.5 0a2.75 2.75 0 0 1 5.5 0m-13 0a2.75 2.75 0 1 1-5.5 0a2.75 2.75 0 0 1 5.5 0M5.5 8.25v7.5" />
+                <path d="M18.5 15.75V8.5a3 3 0 0 0-3-3h-4.336M13.25 8l-1.793-1.793a1 1 0 0 1-.293-.707M13.25 3l-1.793 1.793a1 1 0 0 0-.293.707" />
+            </g>
+        </svg>
+    );
+}
