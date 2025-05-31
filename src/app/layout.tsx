@@ -1,5 +1,6 @@
 import "@/src/styles/globals.css";
 import { Metadata, Viewport } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { Providers } from "./providers";
 
@@ -36,6 +37,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <main className="w-[340px] mx-auto mt-8 py-12 px-2">{children}</main>
                     </div>
                 </Providers>
+
+                <GoogleAnalytics debugMode={process.env.NODE_ENV !== "production"} gaId="G-CMPRBJ96SH" />
             </body>
         </html>
     );
