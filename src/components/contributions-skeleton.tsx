@@ -8,7 +8,7 @@ interface Props {
 
 export default function ContributionsSkeleton({ count = 10 }: Props) {
     return (
-        <Accordion className="w-[310px] break-words" variant="bordered">
+        <Accordion className="break-words" variant="bordered">
             {range(1, count).map((item) => (
                 <AccordionItem
                     key={item}
@@ -23,6 +23,7 @@ export default function ContributionsSkeleton({ count = 10 }: Props) {
                             </div>
                         </div>
                     }
+                    textValue={item.toString()}
                     title={<Skeleton className="h-4 w-3/4 rounded-lg" />}
                 />
             ))}

@@ -51,7 +51,7 @@ export default function Contributions() {
             {error && <div>ERROR: {error}</div>}
 
             {!error && (
-                <Accordion className="w-[310px] break-words" variant="bordered">
+                <Accordion className="break-words" variant="bordered">
                     {contributions.map((contribution: ContributionType, index: number) => (
                         <AccordionItem
                             key={index}
@@ -89,6 +89,7 @@ export default function Contributions() {
                                     </div>
                                 </div>
                             }
+                            textValue={contribution.repo.full_name}
                             title={contribution.repo.full_name}
                         >
                             <div className="grid gap-6">
